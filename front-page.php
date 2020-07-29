@@ -2,7 +2,6 @@
 $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 get_header(); ?>
-
 <div class="mv">
 <div id="mv-carousel" class="carousel slide carousel-fade" data-ride="carousel">
 <div class="carousel-inner">
@@ -18,28 +17,22 @@ get_header(); ?>
 </div>
 </div>
 <!-- #mv-carousel -->
-
 <div class="mv-verticaltxt">
 <img src="<?php echo $wp_url; ?>/dist/images/mv_vertical.png" alt="おしゃれな人のための着物レンタル" srcset="<?php echo $wp_url; ?>/dist/images/mv_vertical.png 1x, <?php echo $wp_url; ?>/dist/images/mv_vertical@2x.png 2x">
 </div>
-
 <div class="mv-jaran">
 <img src="<?php echo $wp_url; ?>/dist/images/jaran_pc.png" alt="じゃらん" srcset="<?php echo $wp_url; ?>/dist/images/jaran_pc.png 1x, <?php echo $wp_url; ?>/dist/images/jaran_pc@2x.png 2x">
 <img src="<?php echo $wp_url; ?>/dist/images/member_pc.png" alt="じゃらん" srcset="<?php echo $wp_url; ?>/dist/images/member_pc.png 1x, <?php echo $wp_url; ?>/dist/images/member_pc@2x.png 2x">
 </div>
-
 <div class="mv-txtkimono">
 <img src="<?php echo $wp_url; ?>/dist/images/txt_kimono.png" alt="kimono" srcset="<?php echo $wp_url; ?>/dist/images/txt_kimono.png 1x, <?php echo $wp_url; ?>/dist/images/txt_kimono@2x.png 2x">
 </div>
-
 </div>
-
 <div class="home-about py-5 text-center">
 <div class="container">
 <img src="<?php echo $wp_url; ?>/dist/images/top_about_pc.png" alt="kimono" srcset="<?php echo $wp_url; ?>/dist/images/top_about_pc.png 1x, <?php echo $wp_url; ?>/dist/images/top_about_pc@2x.png 2x">
 </div>
 </div>
-
 <div class="py-5">
 <div class="infinity-slide">
 <div class="infinity-slide-inner">
@@ -56,7 +49,6 @@ get_header(); ?>
 </div>
 </div>
 </div>
-
 <section class="home-plan py-5">
 <img class="bg-icon" src="<?php echo $wp_url; ?>/dist/images/bg_icon.png" alt="kimono" srcset="<?php echo $wp_url; ?>/dist/images/bg_icon.png 1x, <?php echo $wp_url; ?>/dist/images/bg_icon@2x.png 2x">
 <div class="container">
@@ -64,10 +56,8 @@ get_header(); ?>
 <p class="text-center mb-0">着物コーディネートを楽しめるプランからお任せプランまで、<br>様々な種類のプランの中からあなたにぴったりの着物レンタルプランをお選びいただけます。</p>
 </div>
 </section>
-
 <div class="bg-plan py-5">
 <div class="container">
-
 <div class="plan__list">
 <?php for ($i=1; $i <= 6; $i++): ?>
 <a class="plan__list-item" href="<?php echo $home; ?>/plan/">
@@ -84,14 +74,11 @@ get_header(); ?>
 <!-- .plan__list-item -->
 <?php endfor; ?>
 </div>
-
 <div class="mt-4 text-center">
 <a class="btn btn-outline-light" href="<?php echo $home; ?>/plan/">プラン一覧</a>
 </div>
-
 </div>
 </div>
-
 <section class="bg-light py-5">
 <div class="container">
 <h2 class="ttl-2 text-center"><span>Option</span>オプション</h2>
@@ -103,7 +90,6 @@ get_header(); ?>
 </div>
 </div>
 </section>
-
 <section class="py-5 home-instagram">
 <img class="bg-icon" src="<?php echo $wp_url; ?>/dist/images/bg_icon.png" alt="kimono" srcset="<?php echo $wp_url; ?>/dist/images/bg_icon.png 1x, <?php echo $wp_url; ?>/dist/images/bg_icon@2x.png 2x">
 <div class="container">
@@ -114,7 +100,6 @@ get_header(); ?>
 </div>
 </div>
 </section>
-
 <section class="bg-plan py-5 home-point">
 <img class="bg-icon" src="<?php echo $wp_url; ?>/dist/images/bg_icon.png" alt="kimono" srcset="<?php echo $wp_url; ?>/dist/images/bg_icon.png 1x, <?php echo $wp_url; ?>/dist/images/bg_icon@2x.png 2x">
 <div class="container">
@@ -156,7 +141,6 @@ get_header(); ?>
 </div>
 </div>
 </section>
-
 <div class="home-movie py-5">
 <div class="container">
 <div class="home-movie-wrap">
@@ -171,5 +155,70 @@ get_header(); ?>
 </div>
 </div>
 </div>
+<section class="home-campaign py-5">
+<div class="container">
+<h2 class="ttl-2 text-center"><span>Campaign</span>キャンペーン</h2>
+<?php
+$args = [
+    'posts_per_page' => 5,
+    'post_type' => 'campaign',
+    'orderby' => 'date',
+    'order' => 'DESC'
+];
+$campaign_posts = get_posts($args); ?>
+<div id="carousel-campaign" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+<?php
+foreach ($campaign_posts as $key => $post):
+    setup_postdata($post);
+    $campaign_ttl = get_the_title();
+    $campaign_img_pc_url = get_field('campaign_img_pc');
+    $campaign_img_sp_url = get_field('campaign_img_sp');
+?>
+<div class="carousel-item <?php if($key === 0) {
+    echo 'active';
+} ?>">
+<img src="<?php echo $campaign_img_pc_url; ?>" class="d-block w-100" alt="<?php echo $campaign_ttl; ?>">
+</div>
+<?php endforeach; wp_reset_postdata(); ?>
+</div>
+<ol class="carousel-indicators">
+<?php for ($i=0; $i < count($campaign_posts); $i++): ?>
+<li data-target="#carousel-campaign" data-slide-to="<?php echo $i; ?>" <?php if($i === 0) {
+    echo 'class="active"';
+} ?>></li>
+<?php endfor; ?>
+</ol>
+<a class="carousel-control-prev" href="#carousel-campaign" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carousel-campaign" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+</section>
 
+<section class="py-5 home-shoplist">
+<img class="bg-icon" src="<?php echo $wp_url; ?>/dist/images/bg_icon.png" alt="kimono" srcset="<?php echo $wp_url; ?>/dist/images/bg_icon.png 1x, <?php echo $wp_url; ?>/dist/images/bg_icon@2x.png 2x">
+<div class="container">
+<h2 class="ttl-2 text-center"><span>Shop List</span>店舗一覧</h2>
+<p class="text-center">京あるきの店舗をご紹介します。京都と大阪の合計4店舗でお客様をお待ちしております。<br>お出かけや観光の前にお立ち寄りください。</p>
+<div class="home-shoplist__list">
+<div class="home-shoplist__list__item">
+<div class="home-shoplist__list__item-thumbnail">
+<img src="<?php echo $wp_url; ?>/dist/images/shop_sijo.png" alt="京都四条本店" srcset="<?php echo $wp_url; ?>/dist/images/shop_sijo.png 1x, <?php echo $wp_url; ?>/dist/images/shop_sijo@2x.png 2x">
+</div>
+<div class="home-shoplist__list__item-txt">
+<h3 class="font-serif">京都四条本店</h3>
+<p>京都の中心地にあり、観光スポットへのアクセス抜群です！京都のあちこちを楽しみたい人におすすめです。</p>
+<div class="home-shoplist__list__item-info">阪急「烏丸駅」地下鉄「四条駅」徒歩2分！</div>
+</div>
+</div>
+<!-- .home-shoplist__list__item -->
+</div>
+</div>
+</section>
 <?php get_footer();

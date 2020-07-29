@@ -11895,6 +11895,37 @@ select.form-control {
     .btn-outline-light:hover {
       background-color: #fff; }
 
+.carousel {
+  margin-bottom: 2rem !important; }
+  .carousel-indicators {
+    top: auto;
+    bottom: -2rem;
+    margin-bottom: 0; }
+    .carousel-indicators li {
+      background-color: #cccccc; }
+      .carousel-indicators li.active {
+        background-color: #e81c06; }
+  .carousel-control-prev {
+    width: 10%;
+    opacity: 1; }
+    .carousel-control-prev-icon {
+      background: none; }
+      .carousel-control-prev-icon::before {
+        content: "\f104";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: #e81c06; }
+  .carousel-control-next {
+    width: 10%;
+    opacity: 1; }
+    .carousel-control-next-icon {
+      background: none; }
+      .carousel-control-next-icon::before {
+        content: "\f105";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: #e81c06; }
+
 .header {
   z-index: 999;
   overflow: hidden;
@@ -12055,8 +12086,58 @@ select.form-control {
     padding: 3rem 1rem; }
   .home-movie-icon {
     position: absolute;
-    top: -1rem;
+    top: -3rem;
     left: 0; }
+
+.home-campaign .carousel {
+  max-width: 600px;
+  margin: 0 auto; }
+
+.home-shoplist {
+  z-index: 1;
+  position: relative; }
+  .home-shoplist > .bg-icon {
+    top: 0;
+    right: 0; }
+  .home-shoplist__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 2rem; }
+    .home-shoplist__list__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-wrap: nowrap;
+      width: 49%;
+      box-sizing: border-box;
+      background-color: #f6f3ed; }
+      .home-shoplist__list__item-thumbnail {
+        width: 115px; }
+        .home-shoplist__list__item-thumbnail img {
+          width: 100%;
+          vertical-align: bottom; }
+      .home-shoplist__list__item-txt {
+        position: relative;
+        width: calc(100% - 115px); }
+        .home-shoplist__list__item-txt h3 {
+          box-sizing: border-box;
+          padding: 1rem;
+          margin: 0;
+          font-size: 1.125rem;
+          line-height: 1; }
+        .home-shoplist__list__item-txt p {
+          font-size: 11px;
+          padding: 0 1rem 1rem;
+          margin: 0; }
+      .home-shoplist__list__item-info {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #ebe7df;
+        padding: 0.5rem 1rem; }
 
 .plan__list {
   display: flex;
