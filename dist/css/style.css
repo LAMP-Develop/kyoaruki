@@ -12112,7 +12112,8 @@ select.form-control {
       flex-wrap: nowrap;
       width: 49%;
       box-sizing: border-box;
-      background-color: #f6f3ed; }
+      background-color: #f6f3ed;
+      margin-bottom: 2%; }
       .home-shoplist__list__item-thumbnail {
         width: 115px; }
         .home-shoplist__list__item-thumbnail img {
@@ -12128,7 +12129,7 @@ select.form-control {
           font-size: 1.125rem;
           line-height: 1; }
         .home-shoplist__list__item-txt p {
-          font-size: 11px;
+          font-size: 12px;
           padding: 0 1rem 1rem;
           margin: 0; }
       .home-shoplist__list__item-info {
@@ -12137,7 +12138,8 @@ select.form-control {
         bottom: 0;
         width: 100%;
         background-color: #ebe7df;
-        padding: 0.5rem 1rem; }
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem; }
 
 .plan__list {
   display: flex;

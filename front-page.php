@@ -218,6 +218,39 @@ foreach ($campaign_posts as $key => $post):
 </div>
 </div>
 <!-- .home-shoplist__list__item -->
+<div class="home-shoplist__list__item">
+<div class="home-shoplist__list__item-thumbnail">
+<img src="<?php echo $wp_url; ?>/dist/images/shop_kiyomizu.png" alt="京都祇園店" srcset="<?php echo $wp_url; ?>/dist/images/shop_kiyomizu.png 1x, <?php echo $wp_url; ?>/dist/images/shop_kiyomizu@2x.png 2x">
+</div>
+<div class="home-shoplist__list__item-txt">
+<h3 class="font-serif">京都祇園店</h3>
+<p>清水寺・八坂神社・八坂庚申堂・祇園・高台寺などの祇園・東山エリアの観光地の中心地です。</p>
+<div class="home-shoplist__list__item-info">市バス206号系統「東山安井」徒歩2分！</div>
+</div>
+</div>
+<!-- .home-shoplist__list__item -->
+<div class="home-shoplist__list__item">
+<div class="home-shoplist__list__item-thumbnail">
+<img src="<?php echo $wp_url; ?>/dist/images/shop_umeda.png" alt="大阪梅田店" srcset="<?php echo $wp_url; ?>/dist/images/shop_umeda.png 1x, <?php echo $wp_url; ?>/dist/images/shop_umeda@2x.png 2x">
+</div>
+<div class="home-shoplist__list__item-txt">
+<h3 class="font-serif">大阪梅田店</h3>
+<p>大阪駅や梅田駅からすぐ！アクセス抜群で立ち寄りやすいお店です。</p>
+<div class="home-shoplist__list__item-info">阪急「梅田駅」JR「大阪駅」ヨドバシカメラ付近</div>
+</div>
+</div>
+<!-- .home-shoplist__list__item -->
+<div class="home-shoplist__list__item">
+<div class="home-shoplist__list__item-thumbnail">
+<img src="<?php echo $wp_url; ?>/dist/images/shop_nanba.png" alt="大阪なんば店" srcset="<?php echo $wp_url; ?>/dist/images/shop_nanba.png 1x, <?php echo $wp_url; ?>/dist/images/shop_nanba@2x.png 2x">
+</div>
+<div class="home-shoplist__list__item-txt">
+<h3 class="font-serif">大阪なんば店</h3>
+<p>なんばの繁華街のすぐ近く！心斎橋や道頓堀を楽しみたい人にもおすすめのお店です。</p>
+<div class="home-shoplist__list__item-info">なんば繁華街のすぐそば！</div>
+</div>
+</div>
+<!-- .home-shoplist__list__item -->
 </div>
 </div>
 </section>
