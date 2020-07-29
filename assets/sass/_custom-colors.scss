@@ -1,11 +1,8 @@
-/* 全体のデフォルトカラー */
-// $body-color: ;
-
 /* メインカラー */
 // $primary: ;
 
 /* セカンドカラー */
-// $secondary: ;
+$secondary: #f6f3ed;
 
 /* 緑系 */
 // $success: ;
@@ -17,10 +14,13 @@
 // $warning: ;
 
 /* 赤系 */
-// $danger: ;
+$danger: #e81c06;
 
 /* 灰色系 */
 // $light: ;
 
 /* 黒 */
-// $dark: ;
+$dark: #000000;
+
+/* 全体のデフォルトカラー */
+$body-color: $dark;
