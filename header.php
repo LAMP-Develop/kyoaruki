@@ -13,6 +13,7 @@ $wp_url = get_template_directory_uri(); ?>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<a class="sr-only sr-only-focusable" href="#main-content">Skip to main content</a>
 
 <header class="header">
 <h1>京都観光にぴったりな<br>着物・浴衣レンタル店 京あるき</h1>
@@ -23,7 +24,7 @@ $wp_url = get_template_directory_uri(); ?>
 </div>
 
 <nav class="header__nav">
-<div class="header__nav-language">
+<!-- <div class="header__nav-language">
 <select class="form-control">
 <option>Languages</option>
 <option>日本語</option>
@@ -31,7 +32,7 @@ $wp_url = get_template_directory_uri(); ?>
 <option>簡体中文</option>
 <option>繁體中文</option>
 </select>
-</div>
+</div> -->
 <ul class="header__nav-list">
 <li class="header__nav-item"><a class="header__nav-link" href="<?php echo $home; ?>/point/"><span class="playfair text-danger text-uppercase">point</span>おすすめポイント</a></li>
 <li class="header__nav-item"><a class="header__nav-link" href="<?php echo $home; ?>/plan/"><span class="playfair text-danger text-uppercase">plan</span>プラン一覧</a></li>
@@ -48,4 +49,4 @@ $wp_url = get_template_directory_uri(); ?>
 
 </header>
 
-<main>
+<main id="main-content">

@@ -1,0 +1,146 @@
+.footer {
+  overflow: hidden;
+  display: block;
+  box-sizing: border-box;
+  width: calc(100% - 260px);
+  margin-left: auto;
+  margin-top: 3rem;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    margin: 3rem auto 0;
+  }
+  &-cta {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    background: url("../images/bg_booking_pc.png") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 1rem 0 3rem;
+    .bg-icon {
+      top: -2rem;
+      left: -2rem;
+    }
+    h2 {
+      margin: 0;
+    }
+    h3 {
+      font-size: 1.2rem;
+      margin: 1.5rem auto;
+    }
+    p {
+      font-size: 13px;
+    }
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-wrap: wrap;
+      margin-top: 5px;
+      &-item {
+        z-index: 1;
+        position: relative;
+        overflow: hidden;
+        width: 49.75%;
+        background-color: $light;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 2rem 1rem;
+        .bg-icon {
+          z-index: -1;
+          top: -1.5rem;
+          right: 0;
+        }
+        h3 {
+          font-size: 1.3rem;
+          margin-bottom: 1rem;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+  &-links {
+    h3 {
+      font-size: 1.125rem;
+      margin-bottom: 1em;
+    }
+    &__shops {
+      display: block;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      li {
+        display: block;
+        list-style: none;
+        box-sizing: border-box;
+        a {
+          overflow: hidden;
+          display: block;
+          box-sizing: border-box;
+          padding: 0.5rem 1rem;
+          border-top: dotted 1px $body-color;
+          color: $body-color;
+          i {
+            float: right;
+          }
+        }
+        &:last-child {
+          a {
+            border-bottom: dotted 1px $body-color;
+          }
+        }
+      }
+    }
+    &__plans {
+      display: flex;
+      justify-self: start;
+      align-items: stretch;
+      flex-wrap: wrap;
+      a {
+        overflow: hidden;
+        display: block;
+        box-sizing: border-box;
+        width: 49.5%;
+        background-color: $secondary;
+        padding: 0.5rem 1rem;
+        margin-right: 1%;
+        margin-bottom: 1%;
+        color: $body-color;
+        font-size: $font-size-sm;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+        span {
+          &:first-child {
+            float: left;
+          }
+          &:last-child {
+            float: right;
+            i {
+              font-style: normal;
+              font-size: 1rem;
+              margin-right: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-main {
+    box-sizing: border-box;
+    border-top: solid 1px #fafafa;
+  }
+}
+
+#copy {
+  display: block;
+  box-sizing: border-box;
+  color: $white;
+  background-color: $danger;
+  line-height: 1;
+  padding: 0.25rem 1rem;
+  text-align: center;
+  font-size: 12px;
+}
