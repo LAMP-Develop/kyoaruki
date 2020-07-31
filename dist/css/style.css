@@ -12212,6 +12212,31 @@ select.form-control {
     @media (max-width: 991.98px) {
       .mv-txtkimono {
         left: 0; } }
+  .mv__sub {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem 0; }
+    .mv__sub > .bg-icon {
+      transform: rotate(90deg); }
+      .mv__sub > .bg-icon:first-of-type {
+        top: -1rem;
+        right: -1rem; }
+      .mv__sub > .bg-icon:last-of-type {
+        bottom: -1rem;
+        left: -1rem;
+        transform: rotate(-90deg); }
+    .mv__sub h2 {
+      text-align: center;
+      font-size: 13px;
+      margin: 0; }
+      .mv__sub h2 > span {
+        line-height: 1.5; }
+        .mv__sub h2 > span:first-child {
+          font-weight: bold;
+          font-size: 1.8rem;
+          letter-spacing: 0.2em;
+          text-transform: uppercase; }
 
 .bg-icon {
   z-index: -1;
