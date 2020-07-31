@@ -3,7 +3,11 @@
 @import "./components/mv";
 @import "./components/home";
 @import "./components/footer";
-@import "./components/plan";
 @import "./components/tabpanel";
+
+/* 下層ページ */
+@import "./components/plan";
 @import "./components/news";
 @import "./components/column";
+@import "./components/point";
+@import "./components/single";

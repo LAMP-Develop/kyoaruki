@@ -8,8 +8,6 @@ $wp_url = get_template_directory_uri(); ?>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="keywords" content="京都,着物,浴衣,レンタル">
 <?php wp_head(); ?>
-<?php if (!is_user_logged_in()): ?>
-<?php endif; ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -51,7 +49,7 @@ $wp_url = get_template_directory_uri(); ?>
 </div>
 <ul class="header__nav-list">
 <li class="header__nav-item"><a class="header__nav-link" href="<?php echo $home; ?>/point/"><span class="playfair text-danger text-uppercase">point</span>おすすめポイント</a></li>
-<li class="header__nav-item"><a class="header__nav-link" href="<?php echo $home; ?>/plan/"><span class="playfair text-danger text-uppercase">plan</span>プラン一覧</a></li>
+<li class="header__nav-item"><a class="header__nav-link" href="<?php echo $home; ?>/plan-list/"><span class="playfair text-danger text-uppercase">plan</span>プラン一覧</a></li>
 <li class="header__nav-item"><a class="header__nav-link" href="<?php echo $home; ?>/option/"><span class="playfair text-danger text-uppercase">option</span>オプションサービス</a></li>
 <li class="header__nav-item"><a class="header__nav-link" href="<?php echo $home; ?>/flow/"><span class="playfair text-danger text-uppercase">flow</span>着物レンタルの流れ</a></li>
 <li class="header__nav-item"><a class="header__nav-link" href="<?php echo $home; ?>/shop/"><span class="playfair text-danger text-uppercase">shop</span>店舗一覧</a></li>

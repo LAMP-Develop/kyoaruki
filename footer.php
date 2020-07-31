@@ -46,7 +46,7 @@ if (is_home() || is_front_page()) {
 }
 ?>
 
-<div class="footer-links">
+<div class="footer-links mt-5">
 <div class="container">
 <div class="row">
 <div class="col-md-4 mb-md-0 mb-4">
@@ -62,21 +62,31 @@ if (is_home() || is_front_page()) {
 <h3 class="font-serif">プラン一覧</h3>
 <div class="footer-links__plans">
 <?php
-$args = [
-    'posts_per_page' => -1,
-    'post_type' => 'plan',
-    'orderby' => 'date',
-    'order' => 'DESC',
-];
-$plan_posts = get_posts($args);
-foreach ($plan_posts as $post):
-    setup_postdata($post);
+$plan_terms = get_terms('plan_cat', 'orderby=id&order=asc');
+$plan_terms_array = [];
+foreach ($plan_terms as $term):
+    $args = [
+        'posts_per_page' => -1,
+        'post_type' => 'plan',
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'tax_query' => [
+            [
+                'taxonomy' => 'plan_cat',
+                'field' => 'slug',
+                'terms' => $term->slug,
+            ]
+        ]
+    ];
+    $plan_posts = get_posts($args);
+    foreach ($plan_posts as $post):
+        setup_postdata($post);
 ?>
 <a href="<?php the_permalink(); ?>">
 <span><?php the_title(); ?></span>
 <span><i class="font-serif"><?php the_field('plan_price', get_the_ID()); ?></i>円</span>
 </a>
-<?php endforeach; wp_reset_postdata(); ?>
+<?php endforeach; wp_reset_postdata(); endforeach; ?>
 </div>
 </div>
 </div>
@@ -95,10 +105,10 @@ foreach ($plan_posts as $post):
 </div>
 <div class="col-md text-md-right text-center">
 <div class="d-flex align-items-center flex-wrap justify-content-md-end justify-content-center">
-<a class="text-body small mr-3" href="<?php echo $home; ?>/">運営会社</a>
-<a class="text-body small mr-3" href="<?php echo $home; ?>/">プライバシーポリシー</a>
-<a class="text-body small mr-3" href="<?php echo $home; ?>/">利用規約</a>
-<a class="text-body small" href="<?php echo $home; ?>/">お問い合わせ</a>
+<a class="text-body small mr-3" href="https://www.saganokan.com/" target="_blank">運営会社<i class="far fa-window-restore ml-1"></i></a>
+<a class="text-body small mr-3" href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a>
+<!-- <a class="text-body small mr-3" href="<?php echo $home; ?>/term/">利用規約</a> -->
+<a class="text-body small" href="<?php echo $home; ?>/contact/">お問い合わせ</a>
 </div>
 <div class="d-flex align-items-center flex-wrap justify-content-md-end justify-content-center mt-3">
 <a class="text-danger h5" href="https://www.instagram.com/kimono_rental/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -108,7 +118,7 @@ foreach ($plan_posts as $post):
 </div>
 </div>
 </div>
-<div id="copy">©2020 <?php bloginfo('name'); ?>.</div>
+<div id="copy">©<?php echo date('Y'); ?> 京あるき All raights reserved.</div>
 </div>
 
 </footer>
