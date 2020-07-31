@@ -17,6 +17,10 @@
     background-size: cover;
     text-align: center;
     padding: 1rem 0 3rem;
+    @include media-breakpoint-down(md) {
+      background: url("../images/bg_booking_sp.png") no-repeat center center;
+      background-size: cover;
+    }
     .bg-icon {
       top: -2rem;
       left: -2rem;
@@ -37,6 +41,9 @@
       align-items: stretch;
       flex-wrap: wrap;
       margin-top: 5px;
+      @include media-breakpoint-down(md) {
+        margin-top: 0;
+      }
       &-item {
         z-index: 1;
         position: relative;
@@ -46,6 +53,10 @@
         text-align: center;
         box-sizing: border-box;
         padding: 2rem 1rem;
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          margin-top: 5px;
+        }
         .bg-icon {
           z-index: -1;
           top: -1.5rem;
@@ -109,8 +120,15 @@
         margin-bottom: 1%;
         color: $body-color;
         font-size: $font-size-sm;
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          margin-right: 0;
+        }
         &:nth-child(2n) {
           margin-right: 0;
+        }
+        &:last-child {
+          margin-bottom: 0;
         }
         span {
           &:first-child {

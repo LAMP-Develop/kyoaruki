@@ -11,7 +11,7 @@ $wp_url = get_template_directory_uri(); ?>
 <p>今や京都観光の定番になっているのが着物レンタルです。着物レンタルは華やかで着物をレンタルして街歩きを楽しめるというものです。着物を着るために必要な物は一式レンタルができるので、手ぶらでもOK！着付けプロが担当するので着慣れていない人や初めての人も安心です。本格的な着物をお手頃な価格でレンタルできるので、お気に入りの着物で華やかに着飾って、京都を楽しみましょう！当日予約もできるので、気になる人はプランをチェックしてみてください。</p>
 <div class="p-md-4 py-3 bg-secondary">
 <div class="row mx-0">
-<div class="col-md-4">
+<div class="col-md-4 mb-md-0 mb-3">
 <img src="<?php echo $wp_url; ?>/dist/images/seo_img_1.png" alt="着物レンタルで人気のデザインは？" srcset="<?php echo $wp_url; ?>/dist/images/seo_img_1.png 1x, <?php echo $wp_url; ?>/dist/images/seo_img_1@2x.png 2x">
 </div>
 <div class="col-md-8">
@@ -24,7 +24,7 @@ $wp_url = get_template_directory_uri(); ?>
 </div>
 <div class="p-md-4 py-3 bg-secondary mt-4">
 <div class="row mx-0">
-<div class="col-md-4">
+<div class="col-md-4 mb-md-0 mb-3">
 <img src="<?php echo $wp_url; ?>/dist/images/seo_img_2.png" alt="カップルや母娘でも楽しめる着物レンタル" srcset="<?php echo $wp_url; ?>/dist/images/seo_img_2.png 1x, <?php echo $wp_url; ?>/dist/images/seo_img_2@2x.png 2x">
 </div>
 <div class="col-md-8">
@@ -46,7 +46,7 @@ $wp_url = get_template_directory_uri(); ?>
 <p>着物レンタルをしたらさっそく街歩きに出かけましょう。普段とは違う着物姿をたくさん写真に残すのがおすすめです。京都の和の町並みと着物姿はマッチしてインスタ映えも抜群！スマホやカメラで思い出を残しましょう！写真はInstagramにアップすればたくさんいいねがもらえるかもしれませんよ。</p>
 <div class="p-md-4 py-3 bg-secondary">
 <div class="row mx-0">
-<div class="col-md-4">
+<div class="col-md-4 mb-md-0 mb-3">
 <img src="<?php echo $wp_url; ?>/dist/images/seo_img_3.png" alt="四条・河原町で京都らしい一日を" srcset="<?php echo $wp_url; ?>/dist/images/seo_img_3.png 1x, <?php echo $wp_url; ?>/dist/images/seo_img_3@2x.png 2x">
 </div>
 <div class="col-md-8">

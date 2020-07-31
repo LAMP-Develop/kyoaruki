@@ -11,7 +11,7 @@ $wp_url = get_template_directory_uri(); ?>
 <div class="container">
 <h2><img src="<?php echo $wp_url; ?>/dist/images/cta_ttl2.png" alt="ご予約について" srcset="<?php echo $wp_url; ?>/dist/images/cta_ttl2.png 1x, <?php echo $wp_url; ?>/dist/images/cta_ttl2@2x.png 2x"></h2>
 <h3>京都の着物レンタルなら京あるき</h3>
-<p>京あるきではお手頃なお値段で高品質な着物レンタルをお楽しみいただけます。
+<p class="text-md-center text-left">京あるきではお手頃なお値段で高品質な着物レンタルをお楽しみいただけます。
 <br>お友達同士はもちろんカップルでの京都デートにもおすすめです。
 <br>お手頃価格なのに安っぽくなく高級で、おしゃれかわいい着物レンタルとヘアセットで京都散策を満喫してください。</p>
 <div class="mt-4 text-center">
@@ -49,7 +49,7 @@ if (is_home() || is_front_page()) {
 <div class="footer-links">
 <div class="container">
 <div class="row">
-<div class="col-md-4">
+<div class="col-md-4 mb-md-0 mb-4">
 <h3 class="font-serif">店舗一覧</h3>
 <ul class="footer-links__shops">
 <li><a href="<?php echo $home; ?>/shop#">京都四条本店<i class="fas fa-chevron-circle-right text-danger"></i></a></li>

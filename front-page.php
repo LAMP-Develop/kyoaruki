@@ -44,7 +44,7 @@ get_header(); ?>
 </div>
 <div class="home-about py-5 text-center">
 <div class="container">
-<img class="d-md-block d-none" src="<?php echo $wp_url; ?>/dist/images/top_about_pc.png" alt="kimono" srcset="<?php echo $wp_url; ?>/dist/images/top_about_pc.png 1x, <?php echo $wp_url; ?>/dist/images/top_about_pc@2x.png 2x">
+<img class="d-md-inline d-none" src="<?php echo $wp_url; ?>/dist/images/top_about_pc.png" alt="kimono" srcset="<?php echo $wp_url; ?>/dist/images/top_about_pc.png 1x, <?php echo $wp_url; ?>/dist/images/top_about_pc@2x.png 2x">
 <img class="d-md-none" src="<?php echo $wp_url; ?>/dist/images/top_about_sp.png" alt="kimono" srcset="<?php echo $wp_url; ?>/dist/images/top_about_sp.png 1x, <?php echo $wp_url; ?>/dist/images/top_about_sp@2x.png 2x">
 </div>
 </div>
@@ -394,13 +394,16 @@ foreach ($others_posts as $post):
 ?>
 <article class="column__list-item mb-0">
 <?php if (has_post_thumbnail()): ?>
+
 <a href="<?php the_permalink(); ?>">
 <picture class="column__list-thumbnail">
 <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>" alt="<?php the_title(); ?>">
 </picture>
 </a>
+<div class="column__list-txt">
 <span class="column__list-time"><?php the_time('Y.m.d'); ?></span>
 <h3 class="column__list-ttl"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+</div>
 <?php endif; ?>
 </article>
 <?php endforeach; wp_reset_postdata(); ?>
