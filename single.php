@@ -1,35 +1,37 @@
 <?php
 $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
-get_header(); ?>
+get_header(); the_post();
 
-<section class="py-5">
-<div class="container">
-<div class="row">
-<div class="col-md-8">
-<?php
-if (have_posts()):
-while (have_posts()): the_post(); ?>
-<article>
-<?php
-$t = get_the_title();
-$category = get_the_category();
-$posttags = get_the_tags();
-$thumbnail = get_the_post_thumbnail('large');
+if (is_singular('post')) {
+    $cats = get_the_category()[0];
+    $p = basename($cats->category_nicename);
+    $t = $cats->name;
+} elseif (is_singular('column')) {
+    $p = 'column';
+    $t = 'コラム';
+}
+$p = str_replace('-', ' ', $p);
 ?>
-</article>
-<?php endwhile; endif; ?>
+
+<section class="mv__sub">
+<img class="bg-icon" src="<?php echo $wp_url; ?>/dist/images/bg_icon.png" alt="kimono" srcset="<?php echo $wp_url; ?>/dist/images/bg_icon.png 1x, <?php echo $wp_url; ?>/dist/images/bg_icon@2x.png 2x">
+<div class="container">
+<h2 class="text-danger text-center">
+<span class="font-serif d-block"><?php echo $p; ?></span>
+<span class="font-serif d-block"><?php echo $t; ?></span>
+</h2>
 </div>
-<!-- /col-md-8 -->
-<div class="col-md-4">
-<?php get_sidebar(); ?>
-</div>
-<!-- /col-md-4 -->
-</div>
-<!-- /row -->
-</div>
-<!-- /container -->
+<img class="bg-icon" src="<?php echo $wp_url; ?>/dist/images/bg_icon.png" alt="kimono" srcset="<?php echo $wp_url; ?>/dist/images/bg_icon.png 1x, <?php echo $wp_url; ?>/dist/images/bg_icon@2x.png 2x">
 </section>
-<!-- /mainsection -->
+
+<div class="pb-5">
+<div class="container">
+<div class="single__post">
+<span class="d-block font-serif"><?php the_time('Y.m.d'); ?></span>
+<?php the_content(); ?>
+</div>
+</div>
+</div>
 
 <?php get_footer();

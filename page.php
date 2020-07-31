@@ -20,7 +20,7 @@ $p = str_replace('-', ' ', $p);
 
 <div class="py-5">
 <div class="container">
-<div class="single-post">
+<div class="single__post">
 <?php the_content(); ?>
 </div>
 </div>
