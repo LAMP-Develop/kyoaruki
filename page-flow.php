@@ -92,13 +92,43 @@ $p = str_replace('-', ' ', $p);
   <div class="text-center">
     <img src="<?php echo $wp_url; ?>/dist/images/flow_05.png" alt="出発" srcset="<?php echo $wp_url; ?>/dist/images/flow_05.png 1x, <?php echo $wp_url; ?>/dist/images/flow_05@2x.png 2x">
   </div>
-  <div class="flow__list-item mt-4">
+  <div class="flow__list-item mt-4 return">
     <span class="ribbon font-serif">06</span>
-    <h3 class="font-serif">返却</h3>
-    <div class="flow__list-item-thumbnail">
-      <img src="<?php echo $wp_url; ?>/dist/images/flow_03.png" alt="着物・帯・小物選び" srcset="<?php echo $wp_url; ?>/dist/images/flow_03.png 1x, <?php echo $wp_url; ?>/dist/images/flow_03@2x.png 2x">
+    <h3 class="font-serif">返却方法は選べる<span>3</span>パターン</h3>
+    <div class="flow__list-item__inner">
+      <h4 class="font-serif">当日返却</h4>
+      <p class="text-left">レンタルしたお店に【当日18:00迄】にお戻り下さい。</p>
+      <p class="text-center my-3">
+        <img src="<?php echo $wp_url; ?>/dist/images/flow_06_1.png" alt="当日返却" srcset="<?php echo $wp_url; ?>/dist/images/flow_06_1.png 1x, <?php echo $wp_url; ?>/dist/images/flow_06_1@2x.png 2x">
+      </p>
+      <div class="mt-4 text-center">
+        <a class="btn btn-outline-light" href="<?php echo $home; ?>/">詳しく見る</a>
+      </div>
     </div>
-    <p>1,000点以上の着物を様々なプランでご用意しております。<br>モダン系、アンティーク系、かわいい系、かっこいい系、など、上質な着物をたくさん取り揃えております。<br>店内で、プラン変更も可能ですので、実際にご覧いただいてお選びください！<br>迷った場合は知識豊富なスタッフがアドバイスをさせて頂きますのでご安心下さい！</p>
+    <div class="flow__list-item__inner">
+      <h4 class="font-serif">翌日返却</h4>
+      <p class="text-left">４店舗のいずれかの店に【翌日18:00迄】にご返却下さい。ご出発時はお荷物も一緒にお持ち頂きます。</p>
+      <p class="text-center my-3">
+        <img src="<?php echo $wp_url; ?>/dist/images/flow_06_2.png" alt="翌日返却" srcset="<?php echo $wp_url; ?>/dist/images/flow_06_2.png 1x, <?php echo $wp_url; ?>/dist/images/flow_06_2@2x.png 2x">
+      </p>
+      <div class="mt-4 text-center">
+        <a class="btn btn-outline-light" href="<?php echo $home; ?>/">詳しく見る</a>
+      </div>
+    </div>
+    <div class="flow__list-item__inner">
+      <h4 class="font-serif">ホテル返却</h4>
+      <p class="text-left">宿泊されるホテルのフロントへ【翌日10:00迄】にご返却下さい。
+        <br>お預かりしたお荷物は宿泊先のホテルへ当日18:00迄にお運び致します。
+        <br>※ホテル返却の申込の受付時間は14:00迄です。
+        <br>※京都市内の宿泊施設(ホテル・旅館)に限ります。
+        <br>※フロントの無い宿泊施設はご利用いただけない場合があります。</p>
+      <p class="text-center my-3">
+        <img src="<?php echo $wp_url; ?>/dist/images/flow_06_3.png" alt="ホテル返却" srcset="<?php echo $wp_url; ?>/dist/images/flow_06_3.png 1x, <?php echo $wp_url; ?>/dist/images/flow_06_3@2x.png 2x">
+      </p>
+      <div class="mt-4 text-center">
+        <a class="btn btn-outline-light" href="<?php echo $home; ?>/">詳しく見る</a>
+      </div>
+    </div>
   </div>
   <!-- .flow__list-item -->
 </div>

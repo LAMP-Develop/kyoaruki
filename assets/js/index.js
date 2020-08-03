@@ -14,7 +14,7 @@ $(function () {
   $("#calendar-btn").on("click", function () {
     $(".reserve-menu").toggleClass("active");
   });
-
+  // slick
   $(".slick-slider").slick({
     centerMode: true,
     centerPadding: "10vw",
@@ -47,5 +47,10 @@ $(function () {
         },
       },
     ],
+  });
+  // togle
+  $(".faq__list-que").on("click", function () {
+    $(this).toggleClass("active");
+    $(this).next(".faq__list-ans").slideToggle();
   });
 });

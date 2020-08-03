@@ -393,8 +393,6 @@ foreach ($others_posts as $post):
     setup_postdata($post);
 ?>
 <article class="column__list-item mb-0">
-<?php if (has_post_thumbnail()): ?>
-
 <a href="<?php the_permalink(); ?>">
 <picture class="column__list-thumbnail">
 <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>" alt="<?php the_title(); ?>">
@@ -404,7 +402,6 @@ foreach ($others_posts as $post):
 <span class="column__list-time"><?php the_time('Y.m.d'); ?></span>
 <h3 class="column__list-ttl"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 </div>
-<?php endif; ?>
 </article>
 <?php endforeach; wp_reset_postdata(); ?>
 </div>
