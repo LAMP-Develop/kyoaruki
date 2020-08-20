@@ -4597,10 +4597,10 @@ readers do not read off random characters that represent icons */
 /* 黒 */
 /* 全体のデフォルトカラー */
 /*!
- * Bootstrap v4.5.0 (https://getbootstrap.com/)
+ * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
   --blue: #007bff;
@@ -4735,10 +4735,10 @@ a {
     color: #0056b3;
     text-decoration: underline; }
 
-a:not([href]) {
+a:not([href]):not([class]) {
   color: inherit;
   text-decoration: none; }
-  a:not([href]):hover {
+  a:not([href]):not([class]):hover {
     color: inherit;
     text-decoration: none; }
 
@@ -5036,26 +5036,12 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto; }
-  @media (min-width: 576px) {
-    .container {
-      max-width: 540px; } }
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px; } }
-  @media (min-width: 992px) {
-    .container {
-      max-width: 960px; } }
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1140px; } }
-
-.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -5106,7 +5092,6 @@ pre {
 .col {
   flex-basis: 0;
   flex-grow: 1;
-  min-width: 0;
   max-width: 100%; }
 
 .row-cols-1 > * {
@@ -5268,7 +5253,6 @@ pre {
   .col-sm {
     flex-basis: 0;
     flex-grow: 1;
-    min-width: 0;
     max-width: 100%; }
   .row-cols-sm-1 > * {
     flex: 0 0 100%;
@@ -5387,7 +5371,6 @@ pre {
   .col-md {
     flex-basis: 0;
     flex-grow: 1;
-    min-width: 0;
     max-width: 100%; }
   .row-cols-md-1 > * {
     flex: 0 0 100%;
@@ -5506,7 +5489,6 @@ pre {
   .col-lg {
     flex-basis: 0;
     flex-grow: 1;
-    min-width: 0;
     max-width: 100%; }
   .row-cols-lg-1 > * {
     flex: 0 0 100%;
@@ -5625,7 +5607,6 @@ pre {
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;
-    min-width: 0;
     max-width: 100%; }
   .row-cols-xl-1 > * {
     flex: 0 0 100%;
@@ -6156,6 +6137,7 @@ textarea.form-control {
 .valid-tooltip {
   position: absolute;
   top: 100%;
+  left: 0;
   z-index: 5;
   display: none;
   max-width: 100%;
@@ -6236,6 +6218,7 @@ textarea.form-control {
 .invalid-tooltip {
   position: absolute;
   top: 100%;
+  left: 0;
   z-index: 5;
   display: none;
   max-width: 100%;
@@ -7255,6 +7238,7 @@ input[type="button"].btn-block {
 
 .custom-control {
   position: relative;
+  z-index: 1;
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem; }
@@ -7627,10 +7611,12 @@ input[type="button"].btn-block {
   color: #fff;
   background-color: #007bff; }
 
+.nav-fill > .nav-link,
 .nav-fill .nav-item {
   flex: 1 1 auto;
   text-align: center; }
 
+.nav-justified > .nav-link,
 .nav-justified .nav-item {
   flex-basis: 0;
   flex-grow: 1;
@@ -7924,6 +7910,9 @@ input[type="button"].btn-block {
       border-bottom-width: 0;
       border-bottom-right-radius: calc(0.25rem - 1px);
       border-bottom-left-radius: calc(0.25rem - 1px); }
+  .card > .card-header + .list-group,
+  .card > .list-group + .card-footer {
+    border-top: 0; }
 
 .card-body {
   flex: 1 1 auto;
@@ -7953,8 +7942,6 @@ input[type="button"].btn-block {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
   .card-header:first-child {
     border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
-  .card-header + .list-group .list-group-item:first-child {
-    border-top: 0; }
 
 .card-footer {
   padding: 0.75rem 1.25rem;
@@ -7979,7 +7966,8 @@ input[type="button"].btn-block {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1.25rem; }
+  padding: 1.25rem;
+  border-radius: calc(0.25rem - 1px); }
 
 .card-img,
 .card-img-top,
@@ -8057,18 +8045,20 @@ input[type="button"].btn-block {
       display: inline-block;
       width: 100%; } }
 
-.accordion > .card {
-  overflow: hidden; }
-  .accordion > .card:not(:last-of-type) {
-    border-bottom: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0; }
-  .accordion > .card:not(:first-of-type) {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0; }
-  .accordion > .card > .card-header {
-    border-radius: 0;
-    margin-bottom: -1px; }
+.accordion {
+  overflow-anchor: none; }
+  .accordion > .card {
+    overflow: hidden; }
+    .accordion > .card:not(:last-of-type) {
+      border-bottom: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0; }
+    .accordion > .card:not(:first-of-type) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
+    .accordion > .card > .card-header {
+      border-radius: 0;
+      margin-bottom: -1px; }
 
 .breadcrumb {
   display: flex;
@@ -8685,14 +8675,13 @@ a.close.disabled {
   pointer-events: none; }
 
 .toast {
+  flex-basis: 350px;
   max-width: 350px;
-  overflow: hidden;
   font-size: 0.875rem;
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
   opacity: 0;
   border-radius: 0.25rem; }
   .toast:not(:last-child) {
@@ -8712,7 +8701,9 @@ a.close.disabled {
   color: #6c757d;
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px); }
 
 .toast-body {
   padding: 0.75rem; }
@@ -11690,7 +11681,8 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none !important; }
 
 .text-break {
-  word-wrap: break-word !important; }
+  word-break: break-word !important;
+  overflow-wrap: break-word !important; }
 
 .text-reset {
   color: inherit !important; }
@@ -11953,6 +11945,23 @@ select.form-control {
   font-size: 1rem;
   padding-left: 1em;
   border-left: solid 0.25em #e81c06; }
+
+.ttl-opt {
+  text-align: center;
+  margin-bottom: 1em; }
+  .ttl-opt > span {
+    display: block; }
+    .ttl-opt > span:first-child {
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #e81c06;
+      font-size: 1.125rem;
+      letter-spacing: 0.2em;
+      box-sizing: border-box;
+      padding: 0.5rem 1rem; }
+    .ttl-opt > span:last-child {
+      margin-top: 1rem;
+      font-size: 1.5rem; }
 
 .bg-plan {
   z-index: 1;
@@ -12809,6 +12818,13 @@ select.form-control {
         box-sizing: border-box;
         width: calc(100% - 120px - 24px);
         padding: 1rem; }
+        .plan__list-item-txt.full {
+          position: relative;
+          width: calc(100% - 120px); }
+          .plan__list-item-txt.full > img {
+            position: absolute;
+            top: -5px;
+            right: -5px; }
         .plan__list-item-txt h3 {
           font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
           font-size: 1.125rem;
@@ -13364,4 +13380,46 @@ select.form-control {
             .shop__inner-seeing-reco__list-item h5 + p span {
               font-size: 130%;
               margin: 0 3px; }
+
+.options-wrap {
+  margin-bottom: 4rem; }
+  .options-wrap:last-of-type {
+    margin-bottom: 0; }
+
+.options .plan__list-item-txt h3 span {
+  display: block;
+  line-height: 1;
+  font-size: 11px;
+  margin-bottom: 5px; }
+  .options .plan__list-item-txt h3 span i {
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+    border: solid 1px #f78c21;
+    font-style: normal;
+    padding: 3px; }
+
+.options .orange .plan__list-item-arrow,
+.options .orange .ttl-opt > span:first-child {
+  background-color: #f78c21; }
+
+.options .orange .plan__list-item-txt p.price span,
+.options .orange .plan__list-item-txt h3 {
+  color: #f78c21; }
+
+.options .blue .plan__list-item-arrow,
+.options .blue .ttl-opt > span:first-child {
+  background-color: #297bb4; }
+
+.options .blue .plan__list-item-txt p.price span,
+.options .blue .plan__list-item-txt h3 {
+  color: #297bb4; }
+
+.warning-ttl {
+  font-size: 1.125rem;
+  color: #e81c06; }
+
+.warning__box {
+  padding: 1rem;
+  background-color: #f6f3ed; }
 
