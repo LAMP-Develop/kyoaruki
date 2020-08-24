@@ -165,6 +165,30 @@ $p = str_replace('-', ' ', $p);
 </div>
 </div>
 
+<div class="options__items">
+<div class="options__items-item mb-3">
+<h4>ホテル返却<span><i>京都四条本店・京都祇園店 限定</i></span></h4>
+<p>宿泊されるホテルのフロントへ【翌日10:00迄】にご返却下さい。
+<br>お預かりしたお荷物は宿泊先のホテルへ当日18:00迄にお運び致します。
+<br>※ホテル返却の申込の受付時間は14:00迄です。
+<br>※京都市内の宿泊施設(ホテル・旅館)に限ります。
+<br>※フロントの無い宿泊施設はご利用いただけない場合があります。</p>
+<div class="text-center mt-2">
+<img src="<?php echo $wp_url; ?>/dist/images/flow_06_3.png" alt="ホテル返却" srcset="<?php echo $wp_url; ?>/dist/images/flow_06_3.png 1x, <?php echo $wp_url; ?>/dist/images/flow_06_3@2x.png 2x">
+</div>
+<p class="price">+<span class="text-info">1,500</span>円(税抜)/1名様</p>
+</div>
+<div class="options__items-item">
+<h4>翌日返却</h4>
+<p>４店舗のいずれかの店に【翌日18:00迄】にご返却下さい。ご出発時はお荷物も一緒にお持ち頂きます。
+<br>※出発前に身分証明書の確認/コピーを致しますのでご了承下さい。</p>
+<div class="text-center mt-2">
+<img src="<?php echo $wp_url; ?>/dist/images/flow_06_2.png" alt="ホテル返却" srcset="<?php echo $wp_url; ?>/dist/images/flow_06_2.png 1x, <?php echo $wp_url; ?>/dist/images/flow_06_2@2x.png 2x">
+</div>
+<p class="price">+<span class="text-info">1,000</span>円〜(税抜)/1名様</p>
+</div>
+</div>
+
 </div>
 <!-- .options-wrap -->
 </div>
