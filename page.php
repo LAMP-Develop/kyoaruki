@@ -18,7 +18,7 @@ $p = str_replace('-', ' ', $p);
 <img class="bg-icon" src="<?php echo $wp_url; ?>/dist/images/bg_icon.png" alt="kimono" srcset="<?php echo $wp_url; ?>/dist/images/bg_icon.png 1x, <?php echo $wp_url; ?>/dist/images/bg_icon@2x.png 2x">
 </section>
 
-<div class="py-5">
+<div class="pt-3 pb-5">
 <div class="container">
 <div class="single__post">
 <?php the_content(); ?>

@@ -57,7 +57,7 @@ $wp_url = get_template_directory_uri(); ?>
 <li class="header__nav-item"><a class="header__nav-link" href="<?php echo $home; ?>/group/"><span class="playfair text-danger text-uppercase">group</span>団体のお客様へ</a></li>
 </ul>
 <div class="header__nav-btn mt-3 d-md-block d-none">
-<a class="btn btn-block btn-danger" href="<?php echo $home; ?>">WEB予約</a>
+<a class="btn btn-block btn-danger" href="<?php echo $home; ?>/reserve/">WEB予約</a>
 </div>
 <div class="header__nav-tel d-md-none">
 <div class="header__nav-tel-item">

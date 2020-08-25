@@ -164,7 +164,6 @@ $p = str_replace('-', ' ', $p);
 <p class="mb-0">遠方からお越しの方も安心！手ぶらで京都観光をお楽しみいただけます。</p>
 </div>
 </div>
-
 <div class="options__items">
 <div class="options__items-item mb-3">
 <h4>ホテル返却<span><i>京都四条本店・京都祇園店 限定</i></span></h4>
@@ -188,7 +187,37 @@ $p = str_replace('-', ' ', $p);
 <p class="price">+<span class="text-info">1,000</span>円〜(税抜)/1名様</p>
 </div>
 </div>
-
+</div>
+<!-- .options-wrap -->
+<div class="options-wrap pink">
+<h3 class="ttl-opt font-serif">
+<span>Option 04</span>
+<span>パペポパック</span>
+</h3>
+<div class="row mx-0">
+<div class="col-md-4 mb-md-0 mb-3 px-md-3 px-0">
+<img src="<?php echo $wp_url; ?>/dist/images/op04_about_img.png" alt="パペポパック" srcset="<?php echo $wp_url; ?>/dist/images/op04_about_img.png 1x, <?php echo $wp_url; ?>/dist/images/op04_about_img@2x.png 2x">
+</div>
+<div class="col-md-8 px-md-3 px-0">
+<p class="mb-0">今京都で人気のフォトジェニックスポット『パペポミュージアム』(papepo-museum)に割引価格で入場することができる京あるきだけのオプションメニュー！
+<br>パペポミュージアムは京あるきと同じフロアなので着付けてもらってすぐに入場もOK！
+<br>パペポミュージアムの入場料が、京あるきの着物レンタルと一緒にご予約いただくと、通常価格1,200円(税込)が特別価格¥600円(税込)で入場可能になるお得なパックです！</p>
+</div>
+</div>
+<div class="plan-single__option__list mt-5">
+<div class="plan__list">
+<div class="plan__list-item">
+<div class="plan__list-item-thumbnail">
+<img src="<?php echo $wp_url; ?>/dist/images/op04_p.png" alt="パペポパック" srcset="<?php echo $wp_url; ?>/dist/images/op04_p.png 1x, <?php echo $wp_url; ?>/dist/images/op04_p@2x.png 2x">
+</div>
+<div class="plan__list-item-txt full">
+<h3>パペポパック</h3>
+<p>京都で話題の人気スポットパペポミュージアムの入場料と着物レンタルの料金がセットでお得になるプランです。インスタ映えを狙いたい人は必見です。</p>
+<p class="price">+<span>600</span>円〜</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <!-- .options-wrap -->
 </div>
