@@ -32,6 +32,7 @@ while (have_posts()): the_post(); ?>
 </article>
 <?php endwhile; endif; ?>
 </div>
+<?php wp_pagenavi(); ?>
 </div>
 </div>
 <?php get_footer();

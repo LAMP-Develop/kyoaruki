@@ -93,7 +93,7 @@ foreach ($plan_terms as $term):
 </div>
 </div>
 
-<div class="footer-main mt-5">
+<div class="footer-main">
 <div class="container py-5">
 <div class="row">
 <div class="col-md mb-md-0 mb-4">
@@ -106,6 +106,7 @@ foreach ($plan_terms as $term):
 <div class="col-md text-md-right text-center">
 <div class="d-flex align-items-center flex-wrap justify-content-md-end justify-content-center">
 <a class="text-body small mr-3" href="https://www.saganokan.com/" target="_blank">運営会社<i class="far fa-window-restore ml-1"></i></a>
+<a class="text-body small mr-3" href="<?php echo $home; ?>/term/">利用規約</a>
 <a class="text-body small mr-3" href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a>
 <a class="text-body small" href="<?php echo $home; ?>/shop/">お問い合わせ</a>
 </div>
@@ -121,6 +122,12 @@ foreach ($plan_terms as $term):
 </div>
 
 </footer>
+
+<?php if (!is_page(['reserve', 'booking-form', 'booking-thanks'])): ?>
+<div class="fixed-btn">
+<a class="btn btn-danger w-100" href="<?php echo $home; ?>/reserve/">WEB予約</a>
+</div>
+<?php endif; ?>
 
 <?php wp_footer(); ?>
 </body>

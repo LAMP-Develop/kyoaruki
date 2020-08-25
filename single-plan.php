@@ -172,7 +172,7 @@ foreach ($plan_options as $key => $opt): ?>
 </div>
 
 <div class="mt-4 text-center">
-<a class="btn btn-outline-danger" href="<?php $home; ?>/">このプランで予約</a>
+<a class="btn btn-outline-danger" href="<?php echo $home; ?>/reserve/">WEBで予約する</a>
 </div>
 </div>
 </section>

@@ -27,6 +27,7 @@ while (have_posts()): the_post(); ?>
 </div>
 <?php endwhile; endif; ?>
 </div>
+<?php wp_pagenavi(); ?>
 </div>
 </div>
 

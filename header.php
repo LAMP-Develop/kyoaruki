@@ -8,6 +8,25 @@ $wp_url = get_template_directory_uri(); ?>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="keywords" content="京都,着物,浴衣,レンタル">
 <?php wp_head(); ?>
+
+<?php if (!is_page(['reserve', 'booking-form', 'booking-thanks'])): ?>
+<style>
+.fixed-btn {
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 991.97px) {
+  .fixed-btn {
+    display: none;
+  }
+}
+</style>
+<?php endif; ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -59,33 +78,23 @@ $wp_url = get_template_directory_uri(); ?>
 <div class="header__nav-btn mt-3 d-md-block d-none">
 <a class="btn btn-block btn-danger" href="<?php echo $home; ?>/reserve/">WEB予約</a>
 </div>
-<div class="header__nav-tel d-md-none">
-<div class="header__nav-tel-item">
-<p class="small mb-2 font-serif">京都四条本店</p>
-<p class="m-0"><a class="text-danger font-serif" href="tel:075-213-7171"><i class="fas fa-phone-alt mr-2"></i>075-213-7171</a></p>
-</div>
-<div class="header__nav-tel-item">
-<p class="small mb-2 font-serif">京都祇園店</p>
-<p class="m-0"><a class="text-danger font-serif" href="tel:075-541-7761"><i class="fas fa-phone-alt mr-2"></i>075-541-7761</a></p>
-</div>
-</div>
 </nav>
 
 <div class="reserve-menu">
 <div class="reserve-menu-item">
-<p class="small mb-2 font-serif">京都四条本店</p>
+<p class="mb-2 font-serif">京都四条本店</p>
 <p class="m-0"><a class="text-danger font-serif" href="tel:075-213-7171"><i class="fas fa-phone-alt mr-2"></i>075-213-7171</a></p>
 </div>
 <div class="reserve-menu-item">
-<p class="small mb-2 font-serif">京都祇園店</p>
+<p class="mb-2 font-serif">京都祇園店</p>
 <p class="m-0"><a class="text-danger font-serif" href="tel:075-541-7761"><i class="fas fa-phone-alt mr-2"></i>075-541-7761</a></p>
 </div>
 <div class="reserve-menu-item">
-<p class="small mb-2 font-serif">大阪梅田店</p>
+<p class="mb-2 font-serif">大阪梅田店</p>
 <p class="m-0"><a class="text-danger font-serif" href="tel:06-6374-5589"><i class="fas fa-phone-alt mr-2"></i>06-6374-5589</a></p>
 </div>
 <div class="reserve-menu-item">
-<p class="small mb-2 font-serif">大阪なんば店</p>
+<p class="mb-2 font-serif">大阪なんば店</p>
 <p class="m-0"><a class="text-danger font-serif" href="tel:06-6633-2150"><i class="fas fa-phone-alt mr-2"></i>06-6633-2150</a></p>
 </div>
 <div class="reserve-menu-btn w-100">
