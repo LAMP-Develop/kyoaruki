@@ -40,12 +40,14 @@ get_header(); the_post(); ?>
 <div class="home-point__list__inner-txt">
 <h3 class="font-serif">POINT 01</h3>
 <p class="font-serif">『京都最大級』の超大型店！<br>広々空間で着付・スタジオ撮影可能！<br>アクセスも抜群！</p>
+<div class="d-md-none">
 <p class="mb-2"><img src="<?php echo $wp_url; ?>/dist/images/point_01_1.png" alt="京都四条本店" srcset="<?php echo $wp_url; ?>/dist/images/point_01_1.png 1x, <?php echo $wp_url; ?>/dist/images/point_01_1@2x.png 2x"></p>
 <p class="font-weight-bold mb-2">京都四条本店</p>
 <p class="small bg-0 mb-4">最大300名様迄対応可能の『京都最大級店舗』京都中心部（四条駅/烏丸駅から徒歩2分・京都駅より６分）に本店があり、錦市場をぶらぶら歩き、『祇園』『八坂神社』『清水寺』『八坂庚申堂』『高台寺』等の『祇園東山エリア』伏見稲荷や嵐山…どこへでもアクセス抜群！ホテル・旅館の多いエリアなのでスケジュールが組みやすいですよ♪</p>
 <p class="mb-2"><img src="<?php echo $wp_url; ?>/dist/images/point_01_2.png" alt="京都祇園店" srcset="<?php echo $wp_url; ?>/dist/images/point_01_2.png 1x, <?php echo $wp_url; ?>/dist/images/point_01_2@2x.png 2x"></p>
 <p class="font-weight-bold mb-2">京都祇園店</p>
 <p class="small bg-0">最大60名様迄対応可能の『祇園・東山エリア最大級店舗』清水寺・八坂神社・八坂庚申堂・祇園・高台寺などの祇園・東山エリアの観光地の中心地です。高台寺や八坂庚申堂までは徒歩3分♪</p>
+</div>
 <div class="mt-4 text-center">
 <a class="btn btn-outline-light btn-block" href="<?php echo $home; ?>/shop/">詳しく見る</a>
 </div>
@@ -71,7 +73,7 @@ get_header(); the_post(); ?>
 <h3 class="font-serif">POINT 03</h3>
 <p class="font-serif">関西コレクション8年連続出展の<br>『京都さがの館』がプロデュースした着物</p>
 <p class="small bg-0">関西コレクションに着物ショーで出展の「京都さがの館」プロデュースの当店。京都の着付けなら、テレビや雑誌などのメディアで確かな実績を残す当店にお任せください♪</p>
-<p class="mb-0"><img src="<?php echo $wp_url; ?>/dist/images/point_03_1.png" alt="『京都さがの館』がプロデュースした着物" srcset="<?php echo $wp_url; ?>/dist/images/point_03_1.png 1x, <?php echo $wp_url; ?>/dist/images/point_03_1@2x.png 2x"></p>
+<div class="d-md-none"><p class="mb-0"><img src="<?php echo $wp_url; ?>/dist/images/point_03_1.png" alt="『京都さがの館』がプロデュースした着物" srcset="<?php echo $wp_url; ?>/dist/images/point_03_1.png 1x, <?php echo $wp_url; ?>/dist/images/point_03_1@2x.png 2x"></p></div>
 </div>
 </div>
 <!-- .home-point__list__inner -->
