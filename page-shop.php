@@ -35,7 +35,7 @@ get_header(); the_post(); ?>
 </div>
 <div class="shop__inner-seeing">
 <p class="text-center">
-<img src="<?php echo $wp_url; ?>/dist/images/shop_pict_1.png" alt="京都四条本店" srcset="<?php echo $wp_url; ?>/dist/images/shop_pict_1.png 1x, <?php echo $wp_url; ?>/dist/images/shop_pict_1@2x.png 2x">
+<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/shop_pict_1.png" alt="京都四条本店" srcset="<?php echo $wp_url; ?>/dist/images/shop_pict_1.png 1x, <?php echo $wp_url; ?>/dist/images/shop_pict_1@2x.png 2x">
 </p>
 <div class="shop__inner-seeing-reco bg-light">
 <h4 class="font-serif">おすすめ観光地</h4>
@@ -96,7 +96,7 @@ get_header(); the_post(); ?>
 </div>
 <div class="shop__inner-seeing">
 <p class="text-center">
-<img src="<?php echo $wp_url; ?>/dist/images/shop_pict_2.png" alt="京都祇園店" srcset="<?php echo $wp_url; ?>/dist/images/shop_pict_2.png 1x, <?php echo $wp_url; ?>/dist/images/shop_pict_2@2x.png 2x">
+<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/shop_pict_2.png" alt="京都祇園店" srcset="<?php echo $wp_url; ?>/dist/images/shop_pict_2.png 1x, <?php echo $wp_url; ?>/dist/images/shop_pict_2@2x.png 2x">
 </p>
 <div class="shop__inner-seeing-reco bg-light">
 <h4 class="font-serif">おすすめ観光地</h4>
@@ -155,7 +155,7 @@ get_header(); the_post(); ?>
 </div>
 <div class="shop__inner-seeing">
 <p class="text-center">
-<img src="<?php echo $wp_url; ?>/dist/images/shop_pict_3.png" alt="大阪梅田店" srcset="<?php echo $wp_url; ?>/dist/images/shop_pict_3.png 1x, <?php echo $wp_url; ?>/dist/images/shop_pict_3@2x.png 2x">
+<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/shop_pict_3.png" alt="大阪梅田店" srcset="<?php echo $wp_url; ?>/dist/images/shop_pict_3.png 1x, <?php echo $wp_url; ?>/dist/images/shop_pict_3@2x.png 2x">
 </p>
 <div class="shop__inner-seeing-reco bg-light">
 <h4 class="font-serif">おすすめ観光地</h4>
@@ -189,7 +189,7 @@ get_header(); the_post(); ?>
 </div>
 <div class="shop__inner-seeing">
 <p class="text-center">
-<img src="<?php echo $wp_url; ?>/dist/images/shop_pict_4.png" alt="大阪なんば店" srcset="<?php echo $wp_url; ?>/dist/images/shop_pict_4.png 1x, <?php echo $wp_url; ?>/dist/images/shop_pict_4@2x.png 2x">
+<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/shop_pict_4.png" alt="大阪なんば店" srcset="<?php echo $wp_url; ?>/dist/images/shop_pict_4.png 1x, <?php echo $wp_url; ?>/dist/images/shop_pict_4@2x.png 2x">
 </p>
 <div class="shop__inner-seeing-reco bg-light">
 <h4 class="font-serif">おすすめ観光地</h4>

@@ -98,8 +98,8 @@ foreach ($plan_posts as $post):
 </div>
 <div class="plan__list-item-txt">
 <h3><?php the_title(); ?></h3>
-<p>手軽に着物レンタルを楽しみたい人におすすめのプラン。お好きな着物をお選びいただき、帯や小物のコーディネートはスタッフが行います。</p>
-<p class="price"><span>2,990</span>円</p>
+<p><?php the_field('plan_text'); ?></p>
+<p class="price"><span><?php the_field('plan_price'); ?></span>円</p>
 </div>
 <div class="plan__list-item-arrow"><i class="fas fa-angle-right"></i></div>
 </a>
@@ -107,7 +107,7 @@ foreach ($plan_posts as $post):
 <?php endforeach; wp_reset_postdata(); ?>
 </div>
 <div class="mt-4 text-center">
-<a class="btn btn-outline-light" href="<?php echo $home; ?>/plan/">プラン一覧</a>
+<a class="btn btn-outline-light" href="<?php echo $home; ?>/plan-list/">プラン一覧</a>
 </div>
 </div>
 </div>
@@ -128,6 +128,7 @@ foreach ($plan_posts as $post):
 <div class="container">
 <h2 class="ttl-2 text-center"><span>Instagram</span>公式インスタグラム</h2>
 <p class="text-center">京あるきの公式Instagram（インスタグラム）では、お客様の着物コーディネートを日々更新中！<br>着こなしやヘアスタイルの参考にしてみてください。</p>
+<div class="mx-auto" style="max-width: 768px;"><?php echo do_shortcode('[instagram-feed]'); ?></div>
 <div class="mt-4 text-center">
 <a class="btn btn-outline-light" href="https://www.instagram.com/kimono_rental/" target="_blank">公式インスタグラムを見る</a>
 </div>
@@ -181,7 +182,11 @@ foreach ($plan_posts as $post):
 <p class="text-center">
 <img src="<?php echo $wp_url; ?>/dist/images/ttl_movie.png" alt="動画でチェック！" srcset="<?php echo $wp_url; ?>/dist/images/ttl_movie.png 1x, <?php echo $wp_url; ?>/dist/images/ttl_movie@2x.png 2x">
 </p>
-<!-- TODO: youtube -->
+
+<div class="embed-responsive embed-responsive-16by9 mx-auto" style="max-width: 480px;">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3yHvvzjKqgU"></iframe>
+</div>
+
 <div class="mt-4 text-center">
 <a class="btn btn-info" href="" target="_blank">Youtubeチャンネルへ</a>
 </div>

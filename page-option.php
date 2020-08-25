@@ -204,7 +204,7 @@ $p = str_replace('-', ' ', $p);
 <br>パペポミュージアムの入場料が、京あるきの着物レンタルと一緒にご予約いただくと、通常価格1,200円(税込)が特別価格¥600円(税込)で入場可能になるお得なパックです！</p>
 </div>
 </div>
-<div class="plan-single__option__list mt-5">
+<!-- <div class="plan-single__option__list mt-5">
 <div class="plan__list">
 <div class="plan__list-item">
 <div class="plan__list-item-thumbnail">
@@ -217,7 +217,7 @@ $p = str_replace('-', ' ', $p);
 </div>
 </div>
 </div>
-</div>
+</div> -->
 </div>
 <!-- .options-wrap -->
 </div>

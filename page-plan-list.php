@@ -63,8 +63,8 @@ foreach ($plan_posts as $post):
 </div>
 <div class="plan__list-item-txt">
 <h3><?php the_title(); ?></h3>
-<p>手軽に着物レンタルを楽しみたい人におすすめのプラン。お好きな着物をお選びいただき、帯や小物のコーディネートはスタッフが行います。</p>
-<p class="price"><span>2,990</span>円</p>
+<p><?php the_field('plan_text'); ?></p>
+<p class="price"><span><?php the_field('plan_price'); ?></span>円</p>
 </div>
 <div class="plan__list-item-arrow"><i class="fas fa-angle-right"></i></div>
 </a>

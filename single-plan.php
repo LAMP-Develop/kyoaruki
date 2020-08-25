@@ -52,7 +52,7 @@ foreach ($shops as $key => $shop) {
 ?>
 </div>
 <div class="mt-4 text-center">
-<a class="btn btn-outline-danger" href="<?php $home; ?>/">このプランで予約</a>
+<a class="btn btn-outline-danger" href="<?php echo $home; ?>/reserve/">WEB予約</a>
 </div>
 <div class="mt-5 plan-single__content">
 <h3 class="font-serif">レンタル内容</h3>
@@ -172,7 +172,7 @@ foreach ($plan_options as $key => $opt): ?>
 </div>
 
 <div class="mt-4 text-center">
-<a class="btn btn-outline-danger" href="<?php echo $home; ?>/reserve/">WEBで予約する</a>
+<a class="btn btn-outline-danger" href="<?php echo $home; ?>/reserve/">WEB予約</a>
 </div>
 </div>
 </section>

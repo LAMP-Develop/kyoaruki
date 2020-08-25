@@ -53,4 +53,8 @@ $(function () {
     $(this).toggleClass("active");
     $(this).next(".faq__list-ans").slideToggle();
   });
+  // carousel
+  $(".carousel").carousel({
+    interval: 3500,
+  });
 });
