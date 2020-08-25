@@ -15,7 +15,7 @@ $wp_url = get_template_directory_uri(); ?>
 <br>お友達同士はもちろんカップルでの京都デートにもおすすめです。
 <br>お手頃価格なのに安っぽくなく高級で、おしゃれかわいい着物レンタルとヘアセットで京都散策を満喫してください。</p>
 <div class="mt-4 text-center">
-<a class="btn btn-danger" href="<?php echo $home; ?>/">WEB予約</a>
+<a class="btn btn-danger" href="<?php echo $home; ?>/reserve/">WEB予約</a>
 </div>
 </div>
 </section>
@@ -52,10 +52,10 @@ if (is_home() || is_front_page()) {
 <div class="col-md-4 mb-md-0 mb-4">
 <h3 class="font-serif">店舗一覧</h3>
 <ul class="footer-links__shops">
-<li><a href="<?php echo $home; ?>/shop#">京都四条本店<i class="fas fa-chevron-circle-right text-danger"></i></a></li>
-<li><a href="<?php echo $home; ?>/shop#">京都祇園店<i class="fas fa-chevron-circle-right text-danger"></i></a></li>
-<li><a href="<?php echo $home; ?>/shop#">大阪梅田店<i class="fas fa-chevron-circle-right text-danger"></i></a></li>
-<li><a href="<?php echo $home; ?>/shop#">大阪なんば店<i class="fas fa-chevron-circle-right text-danger"></i></a></li>
+<li><a href="<?php echo $home; ?>/shop#shop01">京都四条本店<i class="fas fa-chevron-circle-right text-danger"></i></a></li>
+<li><a href="<?php echo $home; ?>/shop#shop02">京都祇園店<i class="fas fa-chevron-circle-right text-danger"></i></a></li>
+<li><a href="<?php echo $home; ?>/shop#shop03">大阪梅田店<i class="fas fa-chevron-circle-right text-danger"></i></a></li>
+<li><a href="<?php echo $home; ?>/shop#shop04">大阪なんば店<i class="fas fa-chevron-circle-right text-danger"></i></a></li>
 </ul>
 </div>
 <div class="col-md-8">
@@ -107,8 +107,7 @@ foreach ($plan_terms as $term):
 <div class="d-flex align-items-center flex-wrap justify-content-md-end justify-content-center">
 <a class="text-body small mr-3" href="https://www.saganokan.com/" target="_blank">運営会社<i class="far fa-window-restore ml-1"></i></a>
 <a class="text-body small mr-3" href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a>
-<!-- <a class="text-body small mr-3" href="<?php echo $home; ?>/term/">利用規約</a> -->
-<a class="text-body small" href="<?php echo $home; ?>/contact/">お問い合わせ</a>
+<a class="text-body small" href="<?php echo $home; ?>/shop/">お問い合わせ</a>
 </div>
 <div class="d-flex align-items-center flex-wrap justify-content-md-end justify-content-center mt-3">
 <a class="text-danger h5" href="https://www.instagram.com/kimono_rental/" target="_blank"><i class="fab fa-instagram"></i></a>

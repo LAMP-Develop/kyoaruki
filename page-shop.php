@@ -17,7 +17,7 @@ get_header(); the_post(); ?>
 <div class="pb-5 shop">
 <div class="container">
 
-<div class="shop__inner">
+<div id="shop01" class="shop__inner">
 <h3 class="font-serif">京都四条本店</h3>
 <div class="embed-responsive embed-responsive-4by3 gmap">
 <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13072.392008767352!2d135.7581414!3d35.0042518!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdf3ab54ea777acf5!2z5Lqs44GC44KL44GNIOS6rOmDveWbm-adoeacrOW6lw!5e0!3m2!1sja!2sjp!4v1596517738623!5m2!1sja!2sjp"></iframe>
@@ -78,7 +78,7 @@ get_header(); the_post(); ?>
 </div>
 <!-- .shop__inner -->
 
-<div class="shop__inner">
+<div id="shop02" class="shop__inner">
 <h3 class="font-serif">京都祇園店</h3>
 <div class="embed-responsive embed-responsive-4by3 gmap">
 <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.290125526158!2d135.77534271518437!3d34.99944187466738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108c5b032c3d5%3A0xf0461d4533246bb!2z5Lqs44GC44KL44GNIOa4heawtOmrmOWPsOWvuuW6lw!5e0!3m2!1sja!2sjp!4v1596520057038!5m2!1sja!2sjp"></iframe>
@@ -139,7 +139,7 @@ get_header(); the_post(); ?>
 </div>
 <!-- .shop__inner -->
 
-<div class="shop__inner">
+<div id="shop03" class="shop__inner">
 <h3 class="font-serif">大阪梅田店</h3>
 <div class="embed-responsive embed-responsive-4by3 gmap">
 <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.9931073423036!2d135.49468751517762!3d34.70535379047684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e68e1e373ad3%3A0xdac555451549855!2z44CSNTMwLTAwMTIg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy66Iqd55Sw77yS5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1596520457884!5m2!1sja!2sjp"></iframe>
@@ -174,7 +174,7 @@ get_header(); the_post(); ?>
 </div>
 <!-- .shop__inner -->
 
-<div class="shop__inner">
+<div id="shop04" class="shop__inner">
 <h3 class="font-serif">大阪なんば店</h3>
 <div class="embed-responsive embed-responsive-4by3 gmap">
 <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.613711238397!2d135.49698601517676!3d34.664457292666086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e76d21c11c31%3A0x9d7f8863c5516c79!2z5Y2X5rW36YeO5p2R44OT44Or!5e0!3m2!1sja!2sjp!4v1596521373076!5m2!1sja!2sjp"></iframe>

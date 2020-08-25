@@ -208,7 +208,7 @@ foreach ($campaign_posts as $key => $post):
     $campaign_img_pc_url = get_field('campaign_img_pc');
     $campaign_img_sp_url = get_field('campaign_img_sp');
 ?>
-<div class="carousel-item <?php if($key === 0) {
+<div class="carousel-item <?php if ($key === 0) {
     echo 'active';
 } ?>">
 <img src="<?php echo $campaign_img_pc_url; ?>" class="d-block w-100" alt="<?php echo $campaign_ttl; ?>">
@@ -217,7 +217,7 @@ foreach ($campaign_posts as $key => $post):
 </div>
 <ol class="carousel-indicators">
 <?php for ($i=0; $i < count($campaign_posts); $i++): ?>
-<li data-target="#carousel-campaign" data-slide-to="<?php echo $i; ?>" <?php if($i === 0) {
+<li data-target="#carousel-campaign" data-slide-to="<?php echo $i; ?>" <?php if ($i === 0) {
     echo 'class="active"';
 } ?>></li>
 <?php endfor; ?>
@@ -240,7 +240,7 @@ foreach ($campaign_posts as $key => $post):
 <h2 class="ttl-2 text-center"><span>Shop List</span>店舗一覧</h2>
 <p class="text-center">京あるきの店舗をご紹介します。京都と大阪の合計4店舗でお客様をお待ちしております。<br>お出かけや観光の前にお立ち寄りください。</p>
 <div class="home-shoplist__list">
-<a class="home-shoplist__list__item" href="<?php echo $home; ?>/shop#">
+<a class="home-shoplist__list__item" href="<?php echo $home; ?>/shop#shop01">
 <div class="home-shoplist__list__item-thumbnail">
 <img src="<?php echo $wp_url; ?>/dist/images/shop_sijo.png" alt="京都四条本店" srcset="<?php echo $wp_url; ?>/dist/images/shop_sijo.png 1x, <?php echo $wp_url; ?>/dist/images/shop_sijo@2x.png 2x">
 </div>
@@ -252,7 +252,7 @@ foreach ($campaign_posts as $key => $post):
 <div class="home-shoplist__list__item-arrow"><i class="fas fa-angle-right"></i></div>
 </a>
 <!-- .home-shoplist__list__item -->
-<a class="home-shoplist__list__item" href="<?php echo $home; ?>/shop#">
+<a class="home-shoplist__list__item" href="<?php echo $home; ?>/shop#shop02">
 <div class="home-shoplist__list__item-thumbnail">
 <img src="<?php echo $wp_url; ?>/dist/images/shop_kiyomizu.png" alt="京都祇園店" srcset="<?php echo $wp_url; ?>/dist/images/shop_kiyomizu.png 1x, <?php echo $wp_url; ?>/dist/images/shop_kiyomizu@2x.png 2x">
 </div>
@@ -264,7 +264,7 @@ foreach ($campaign_posts as $key => $post):
 <div class="home-shoplist__list__item-arrow"><i class="fas fa-angle-right"></i></div>
 </a>
 <!-- .home-shoplist__list__item -->
-<a class="home-shoplist__list__item" href="<?php echo $home; ?>/shop#">
+<a class="home-shoplist__list__item" href="<?php echo $home; ?>/shop#shop03">
 <div class="home-shoplist__list__item-thumbnail">
 <img src="<?php echo $wp_url; ?>/dist/images/shop_umeda.png" alt="大阪梅田店" srcset="<?php echo $wp_url; ?>/dist/images/shop_umeda.png 1x, <?php echo $wp_url; ?>/dist/images/shop_umeda@2x.png 2x">
 </div>
@@ -276,7 +276,7 @@ foreach ($campaign_posts as $key => $post):
 <div class="home-shoplist__list__item-arrow"><i class="fas fa-angle-right"></i></div>
 </a>
 <!-- .home-shoplist__list__item -->
-<a class="home-shoplist__list__item" href="<?php echo $home; ?>/shop#">
+<a class="home-shoplist__list__item" href="<?php echo $home; ?>/shop#shop04">
 <div class="home-shoplist__list__item-thumbnail">
 <img src="<?php echo $wp_url; ?>/dist/images/shop_nanba.png" alt="大阪なんば店" srcset="<?php echo $wp_url; ?>/dist/images/shop_nanba.png 1x, <?php echo $wp_url; ?>/dist/images/shop_nanba@2x.png 2x">
 </div>

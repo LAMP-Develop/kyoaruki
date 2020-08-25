@@ -82,7 +82,7 @@ $p = str_replace('-', ' ', $p);
 </div>
 </div>
 <!-- .options-wrap -->
-<div class="options-wrap orange">
+<div id="photoplan" class="options-wrap orange">
 <h3 class="ttl-opt font-serif">
 <span>Option 02</span>
 <span>撮影サービス</span>
@@ -151,7 +151,7 @@ $p = str_replace('-', ' ', $p);
 </div>
 </div>
 <!-- .options-wrap -->
-<div class="options-wrap blue">
+<div id="storage" class="options-wrap blue">
 <h3 class="ttl-opt font-serif">
 <span>Option 03</span>
 <span>荷物預かりサービス</span>

@@ -89,7 +89,7 @@ $wp_url = get_template_directory_uri(); ?>
 <p class="m-0"><a class="text-danger font-serif" href="tel:06-6633-2150"><i class="fas fa-phone-alt mr-2"></i>06-6633-2150</a></p>
 </div>
 <div class="reserve-menu-btn w-100">
-<a class="bg-danger text-white w-100 d-block p-3 text-center font-serif" href="<?php echo $home; ?>/">WEB予約<i class="fas fa-chevron-circle-right ml-3"></i></a>
+<a class="bg-danger text-white w-100 d-block p-3 text-center font-serif" href="<?php echo $home; ?>/reserve/">WEB予約<i class="fas fa-chevron-circle-right ml-3"></i></a>
 </div>
 </div>
 
