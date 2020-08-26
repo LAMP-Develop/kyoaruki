@@ -81,7 +81,7 @@ $plan_options = get_field('plan_options');
 foreach ($plan_options as $key => $opt): ?>
 
 <?php if ($opt === 'オーダーメイドヘアセット'): ?>
-<a class="plan__list-item" href="<?php echo $home; ?>/option/">
+<div class="plan__list-item">
 <div class="plan__list-item-thumbnail">
 <img src="<?php echo $wp_url; ?>/dist/images/op_hair.png" alt="オーダーメイドヘアセット" srcset="<?php echo $wp_url; ?>/dist/images/op_hair.png 1x, <?php echo $wp_url; ?>/dist/images/op_hair@2x.png 2x">
 </div>
@@ -91,11 +91,11 @@ foreach ($plan_options as $key => $opt): ?>
 <p class="price">+<span>1,500</span>円</p>
 </div>
 <div class="plan__list-item-arrow"><i class="fas fa-angle-right"></i></div>
-</a>
+</div>
 <?php endif; ?>
 
 <?php if ($opt === '金襴帯'): ?>
-<a class="plan__list-item" href="<?php echo $home; ?>/option/">
+<div class="plan__list-item">
 <div class="plan__list-item-thumbnail">
 <img src="<?php echo $wp_url; ?>/dist/images/op_kin.png" alt="金襴帯" srcset="<?php echo $wp_url; ?>/dist/images/op_kin.png 1x, <?php echo $wp_url; ?>/dist/images/op_kin@2x.png 2x">
 </div>
@@ -105,11 +105,11 @@ foreach ($plan_options as $key => $opt): ?>
 <p class="price">+<span>500</span>円</p>
 </div>
 <div class="plan__list-item-arrow"><i class="fas fa-angle-right"></i></div>
-</a>
+</div>
 <?php endif; ?>
 
 <?php if ($opt === '髪飾り付け放題'): ?>
-<a class="plan__list-item" href="<?php echo $home; ?>/option/">
+<div class="plan__list-item">
 <div class="plan__list-item-thumbnail">
 <img src="<?php echo $wp_url; ?>/dist/images/op_kazari.png" alt="髪飾り付け放題" srcset="<?php echo $wp_url; ?>/dist/images/op_kazari.png 1x, <?php echo $wp_url; ?>/dist/images/op_kazari@2x.png 2x">
 </div>
@@ -119,11 +119,11 @@ foreach ($plan_options as $key => $opt): ?>
 <p class="price">+<span>500</span>円</p>
 </div>
 <div class="plan__list-item-arrow"><i class="fas fa-angle-right"></i></div>
-</a>
+</div>
 <?php endif; ?>
 
 <?php if ($opt === '帯飾り'): ?>
-<a class="plan__list-item" href="<?php echo $home; ?>/option/">
+<div class="plan__list-item">
 <div class="plan__list-item-thumbnail">
 <img src="<?php echo $wp_url; ?>/dist/images/op_obi.png" alt="帯飾り" srcset="<?php echo $wp_url; ?>/dist/images/op_obi.png 1x, <?php echo $wp_url; ?>/dist/images/op_obi@2x.png 2x">
 </div>
@@ -133,7 +133,7 @@ foreach ($plan_options as $key => $opt): ?>
 <p class="price">+<span>500</span>円</p>
 </div>
 <div class="plan__list-item-arrow"><i class="fas fa-angle-right"></i></div>
-</a>
+</div>
 <?php endif; ?>
 
 <?php if ($opt === 'お荷物お預かり'): ?>

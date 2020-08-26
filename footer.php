@@ -106,9 +106,8 @@ foreach ($plan_terms as $term):
 <div class="col-md text-md-right text-center">
 <div class="d-flex align-items-center flex-wrap justify-content-md-end justify-content-center">
 <a class="text-body small mr-3" href="https://www.saganokan.com/" target="_blank">運営会社<i class="far fa-window-restore ml-1"></i></a>
-<a class="text-body small mr-3" href="<?php echo $home; ?>/term/">利用規約</a>
 <a class="text-body small mr-3" href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a>
-<a class="text-body small" href="<?php echo $home; ?>/shop/">お問い合わせ</a>
+<a class="text-body small" href="<?php echo $home; ?>/contact/">お問い合わせ</a>
 </div>
 <div class="d-flex align-items-center flex-wrap justify-content-md-end justify-content-center mt-3">
 <a class="text-danger h5" href="https://www.instagram.com/kimono_rental/" target="_blank"><i class="fab fa-instagram"></i></a>

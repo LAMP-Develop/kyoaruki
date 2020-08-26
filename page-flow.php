@@ -101,9 +101,6 @@ $p = str_replace('-', ' ', $p);
 <p class="text-center my-3">
 <img src="<?php echo $wp_url; ?>/dist/images/flow_06_1.png" alt="当日返却" srcset="<?php echo $wp_url; ?>/dist/images/flow_06_1.png 1x, <?php echo $wp_url; ?>/dist/images/flow_06_1@2x.png 2x">
 </p>
-<div class="mt-4 text-center">
-<a class="btn btn-outline-light" href="<?php echo $home; ?>/option#storage">詳しく見る</a>
-</div>
 </div>
 <div class="flow__list-item__inner">
 <h4 class="font-serif">翌日返却</h4>

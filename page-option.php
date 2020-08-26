@@ -27,10 +27,10 @@ $p = str_replace('-', ' ', $p);
 <span>着物にプラスで！</span>
 </h3>
 <div class="row mx-0">
-<div class="col-md-4 mb-md-0 mb-3 px-md-3 px-0">
-<img src="<?php echo $wp_url; ?>/dist/images/about_img.png" alt="あなただけの着物レンタル" srcset="<?php echo $wp_url; ?>/dist/images/about_img.png 1x, <?php echo $wp_url; ?>/dist/images/about_img@2x.png 2x">
+<div class="col-md-3 mb-md-0 mb-3 px-md-3 px-0">
+<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/op01_about_img.png" alt="あなただけの着物レンタル" srcset="<?php echo $wp_url; ?>/dist/images/op01_about_img.png 1x, <?php echo $wp_url; ?>/dist/images/op01_about_img@2x.png 2x">
 </div>
-<div class="col-md-8 px-md-3 px-0">
+<div class="col-md-9 px-md-3 px-0">
 <p class="mb-0">特別な一日だからこそ、細部までこだわったお気に入りの和装スタイルで京都の街を歩きませんか?
 <br>※レンタル着物プラン内にもセットで小物が付属しております。
 <br>※以下の小物類はプラン料金+別途にてご利用いただけるオプションとなります。</p>

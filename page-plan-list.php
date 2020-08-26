@@ -44,7 +44,7 @@ $args = [
     'posts_per_page' => -1,
     'post_type' => 'plan',
     'orderby' => 'date',
-    'order' => 'DESC',
+    'order' => 'ASC',
     'tax_query' => [ // 着物プランのみ
         [
             'taxonomy' => 'plan_cat',

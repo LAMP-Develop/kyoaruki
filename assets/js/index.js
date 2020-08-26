@@ -55,6 +55,6 @@ $(function () {
   });
   // carousel
   $(".carousel").carousel({
-    interval: 3500,
+    interval: 3000,
   });
 });

@@ -188,7 +188,7 @@ foreach ($plan_posts as $post):
 </div>
 
 <div class="mt-4 text-center">
-<a class="btn btn-info" href="" target="_blank">Youtubeチャンネルへ</a>
+<a class="btn btn-info" href="https://www.youtube.com/channel/UCYsk7QT246fF1e_3E-8xYhw" target="_blank">Youtubeチャンネルへ</a>
 </div>
 </div>
 </div>

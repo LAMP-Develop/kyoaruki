@@ -142,15 +142,15 @@ $p = str_replace('-', ' ', $p);
 <section class="py-5 bg-light">
 <div class="container">
 <h2 class="ttl-2 text-center"><span>option</span>オプション</h2>
-<div class="plan__list">
-<div class="plan__list-item no-img">
+<div class="plan__list justify-content-md-center">
+<div class="plan__list-item no-img mb-md-0">
 <div class="plan__list-item-txt">
 <h3>お荷物お預かり</h3>
 <p class="price"><span>無料</span></p>
 </div>
 <div class="plan__list-item-arrow"><i class="fas fa-angle-right"></i></div>
 </div>
-<div class="plan__list-item no-img">
+<div class="plan__list-item no-img mb-md-0 mr-md-0">
 <div class="plan__list-item-txt">
 <h3>ホテル返却</h3>
 <p class="price"><span>無料</span></p>

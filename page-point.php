@@ -17,10 +17,10 @@ get_header(); the_post(); ?>
 <div class="pb-5">
 <div class="container">
 <div class="row mx-0">
-<div class="col-md-4 mb-md-0 mb-3 px-md-3 px-0">
-<img src="<?php echo $wp_url; ?>/dist/images/about_img.png" alt="あなただけの着物レンタル" srcset="<?php echo $wp_url; ?>/dist/images/about_img.png 1x, <?php echo $wp_url; ?>/dist/images/about_img@2x.png 2x">
+<div class="col-md-3 mb-md-0 mb-3 px-md-3 px-0">
+<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/about_img.png" alt="あなただけの着物レンタル" srcset="<?php echo $wp_url; ?>/dist/images/about_img.png 1x, <?php echo $wp_url; ?>/dist/images/about_img@2x.png 2x">
 </div>
-<div class="col-md-8 px-md-3 px-0">
+<div class="col-md-9 px-md-3 px-0">
 <p class="mb-0">京あるきではおしゃれで可愛い着物を多数ご用意しております。
 <br>あなたに似合う一着がきっと見つかるはず。
 <br>どこがいいか迷ったら、京あるきにお任せください。</p>
