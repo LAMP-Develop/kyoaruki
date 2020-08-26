@@ -78,21 +78,16 @@ get_header(); ?>
 $args = [
     'posts_per_page' => 6,
     'post_type' => 'plan',
-    'orderby' => 'date',
+    'orderby' => 'meta_value',
+    'meta_key' => 'top_plan',
     'order' => 'ASC',
-    'tax_query' => [ // 着物プランのみ
-        [
-            'taxonomy' => 'plan_cat',
-            'field' => 'slug',
-            'terms' => 'kimono',
-        ]
-    ]
 ];
 $plan_posts = get_posts($args);
 foreach ($plan_posts as $post):
     setup_postdata($post);
+    $cats = get_the_terms(get_the_ID(), 'plan_cat')[0]->slug;
 ?>
-<a class="plan__list-item" href="<?php the_permalink(); ?>">
+<a class="plan__list-item <?php echo $cats; ?>" href="<?php the_permalink(); ?>">
 <div class="plan__list-item-thumbnail">
 <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>" alt="<?php the_title(); ?>">
 </div>
