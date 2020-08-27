@@ -207,11 +207,16 @@ foreach ($campaign_posts as $key => $post):
     $campaign_ttl = get_the_title();
     $campaign_img_pc_url = get_field('campaign_img_pc');
     $campaign_img_sp_url = get_field('campaign_img_sp');
+    $campaign_url = get_field('campaign_url');
 ?>
 <div class="carousel-item <?php if ($key === 0) {
     echo 'active';
 } ?>">
+<?php if ($campaign_url != '' && $campaign_url != null): ?>
+<a href="<?php echo $campaign_url; ?>" target="_blank"><img src="<?php echo $campaign_img_pc_url; ?>" class="d-block w-100" alt="<?php echo $campaign_ttl; ?>"></a>
+<?php else: ?>
 <img src="<?php echo $campaign_img_pc_url; ?>" class="d-block w-100" alt="<?php echo $campaign_ttl; ?>">
+<?php endif; ?>
 </div>
 <?php endforeach; wp_reset_postdata(); ?>
 </div>
