@@ -123,3 +123,16 @@ function add_my_scripts()
     );
 }
 add_action('wp_enqueue_scripts', 'add_my_scripts');
+
+
+// MTS Simple Bookingカスタマイズ
+function form_count_label($str)
+{
+    if ($str == '大人') {
+        return '女性';
+    } elseif ($str == '小人') {
+        return '男性';
+    }
+    return '';
+}
+add_filter('booking_form_count_label', 'form_count_label');
