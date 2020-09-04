@@ -132,7 +132,21 @@ function form_count_label($str)
         return '女性';
     } elseif ($str == '小人') {
         return '男性';
+    } elseif ($str == '幼児') {
+        return '子ども';
     }
     return '';
 }
 add_filter('booking_form_count_label', 'form_count_label');
+
+function form_option_title($title)
+{
+    return 'ブラン・オプション選択';
+}
+add_filter('booking_form_option_title', 'form_option_title');
+
+function form_tel($tel)
+{
+    return '携帯電話番号';
+}
+add_filter('booking_form_tel', 'form_tel');
