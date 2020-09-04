@@ -26,12 +26,12 @@ if (is_array($slides) && count($slides) > 0):
 <div class="plan-single__slide">
 <div class="slick-slider">
 <?php foreach ($slides as $key => $slide): ?>
-<div><img class="w-100 d-block" src="<?php echo $slide['plan_slide_img']; ?>" alt="<?php the_title(); ?>画像"></div>
+<div class="px-1"><img class="w-100 d-block" src="<?php echo $slide['plan_slide_img']; ?>" alt="<?php the_title(); ?>画像"></div>
 <?php endforeach; ?>
 </div>
 <div class="slider-nav">
 <?php foreach ($slides as $key => $slide): ?>
-<div class="thumbnailnav"><img class="w-100 d-block" src="<?php echo $slide['plan_slide_img']; ?>" alt="<?php the_title(); ?>画像"></div>
+<div class="thumbnailnav"><img class="d-block" src="<?php echo $slide['plan_slide_img']; ?>" alt="<?php the_title(); ?>画像"></div>
 <?php endforeach; ?>
 </div>
 </div>

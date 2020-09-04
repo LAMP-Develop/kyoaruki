@@ -38,7 +38,7 @@ $p = str_replace('-', ' ', $p);
 
 <div class="home-point__list__inner">
 <div class="home-point__list__inner-thumbnail">
-<img src="<?php echo $wp_url; ?>/dist/images/g_point_01.png" alt="京あるきが選ばれるポイント" srcset="<?php echo $wp_url; ?>/dist/images/g_point_01.png 1x, <?php echo $wp_url; ?>/dist/images/g_point_01@2x.png 2x">
+<img src="<?php echo $wp_url; ?>/dist/images/g_point_01.jpg" alt="京あるきが選ばれるポイント">
 </div>
 <div class="home-point__list__inner-txt">
 <h3 class="font-serif">POINT 01</h3>
@@ -50,7 +50,7 @@ $p = str_replace('-', ' ', $p);
 
 <div class="home-point__list__inner">
 <div class="home-point__list__inner-thumbnail">
-<img src="<?php echo $wp_url; ?>/dist/images/g_point_02.png" alt="京あるきが選ばれるポイント" srcset="<?php echo $wp_url; ?>/dist/images/g_point_02.png 1x, <?php echo $wp_url; ?>/dist/images/g_point_02@2x.png 2x">
+<img src="<?php echo $wp_url; ?>/dist/images/g_point_02.jpg" alt="京あるきが選ばれるポイント">
 </div>
 <div class="home-point__list__inner-txt">
 <h3 class="font-serif">POINT 02</h3>
@@ -266,7 +266,7 @@ $p = str_replace('-', ' ', $p);
 <a href="tel:075-241-5776">TEL<span class="text-danger">075-241-5776</span></a>
 </p>
 <p>
-<a class="btn btn-danger" href="mailto:kimono-rental@saganokan.com">メールでのご予約はこちら<br><small>kimono-rental@saganokan.com</small></a>
+<a class="btn btn-danger" href="<?php echo $home; ?>/group-form/">ご予約はこちらから</a>
 </p>
 <p class="group__booking-fax">
 <span>FAXでのご予約は 075-241-5776</span>

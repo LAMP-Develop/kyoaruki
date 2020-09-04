@@ -177,9 +177,8 @@ foreach ($plan_posts as $post):
 <p class="text-center">
 <img src="<?php echo $wp_url; ?>/dist/images/ttl_movie.png" alt="動画でチェック！" srcset="<?php echo $wp_url; ?>/dist/images/ttl_movie.png 1x, <?php echo $wp_url; ?>/dist/images/ttl_movie@2x.png 2x">
 </p>
-
 <div class="embed-responsive embed-responsive-16by9 mx-auto" style="max-width: 480px;">
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3yHvvzjKqgU"></iframe>
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/31v0QBed0MQ"></iframe>
 </div>
 
 <div class="mt-4 text-center">
