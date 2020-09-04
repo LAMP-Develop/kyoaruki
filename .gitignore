@@ -1,3 +1,7 @@
 /node_modules
 /assets
 *.DS_store
+package.json
+package-lock.json
+webpack.config.json
+imagemin.js
