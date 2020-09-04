@@ -28,7 +28,8 @@ $p = str_replace('-', ' ', $p);
 <div class="pb-5">
 <div class="container">
 <div class="single__post">
-<span class="d-block font-serif"><?php the_time('Y.m.d'); ?></span>
+<h2 class="single__post-title"><?php the_title(); ?></h2>
+<span class="d-block font-serif mb-4"><?php the_time('Y.m.d'); ?></span>
 <?php the_content(); ?>
 </div>
 </div>

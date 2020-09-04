@@ -65,7 +65,7 @@ $p = str_replace('-', ' ', $p);
 <img src="<?php echo $wp_url; ?>/dist/images/g_point_03.png" alt="京あるきが選ばれるポイント" srcset="<?php echo $wp_url; ?>/dist/images/g_point_03.png 1x, <?php echo $wp_url; ?>/dist/images/g_point_03@2x.png 2x">
 </div>
 <div class="home-point__list__inner-txt">
-<h3 class="font-serif">POINT 02</h3>
+<h3 class="font-serif">POINT 03</h3>
 <p class="font-serif">『ホテル返却無料サービス』</p>
 <p class="small bg-0 text-center">京都市内・大津市内ホテルへお泊りの<br>団体様は翌日着物をフロントへ返却。</p>
 </div>
