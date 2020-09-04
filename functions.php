@@ -63,7 +63,7 @@ add_filter('document_title_separator', 'title_separator');
 // 標準のjquery消去
 function my_delete_local_jquery()
 {
-    if (!is_admin() && !is_front_page()) {
+    if (!is_admin() && !is_front_page() && !is_page(['group-form'])) {
         wp_deregister_script('jquery');
     }
 }
@@ -105,7 +105,7 @@ function twpp_enqueue_styles()
         'main-style',
         get_template_directory_uri().'/dist/css/style.css',
         [],
-        '1.0.0',
+        '1.0.1',
         'all'
     );
 }
