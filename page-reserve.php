@@ -22,7 +22,7 @@ $p = str_replace('-', ' ', $p);
 <div class="container">
 <p class="text-center">ご希望の店舗をお選びください。</p>
 
-<div class="d-flex justify-content-center align-items-center flex-wrap">
+<div class="d-flex justify-content-center align-items-center flex-wrap reserve-btns">
 <a class="btn btn-danger m-2" href="<?php echo $home; ?>/reserve/shop-sijo/">京都四条本店</a>
 <a class="btn btn-danger m-2" href="<?php echo $home; ?>/reserve/shop-gion/">京都祇園店</a>
 <a class="btn btn-danger m-2" href="<?php echo $home; ?>/reserve/shop-umeda/">大阪梅田店</a>
