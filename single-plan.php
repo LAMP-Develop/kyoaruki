@@ -147,11 +147,21 @@ foreach ($plan_options as $key => $opt): ?>
 </a>
 <?php endif; ?>
 
-<?php if ($opt === 'パペポパック'): ?>
+<?php if ($opt === 'パペポパック（平日）'): ?>
 <a class="plan__list-item no-img" href="<?php echo $home; ?>/option/">
 <div class="plan__list-item-txt">
-<h3>パペポパック</h3>
+<h3>パペポパック（平日）</h3>
 <p class="price"><span>600</span>円</p>
+</div>
+<div class="plan__list-item-arrow"><i class="fas fa-angle-right"></i></div>
+</a>
+<?php endif; ?>
+
+<?php if ($opt === 'パペポパック（土日祝）'): ?>
+<a class="plan__list-item no-img" href="<?php echo $home; ?>/option/">
+<div class="plan__list-item-txt">
+<h3>パペポパック（土日祝）</h3>
+<p class="price"><span>750</span>円</p>
 </div>
 <div class="plan__list-item-arrow"><i class="fas fa-angle-right"></i></div>
 </a>
