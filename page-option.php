@@ -82,12 +82,11 @@ $p = str_replace('-', ' ', $p);
 <div class="plan__list-item-thumbnail">
 <img src="<?php echo $wp_url; ?>/dist/images/opt_boots.jpg" alt="ブーツ" srcset="<?php echo $wp_url; ?>/dist/images/opt_boots.jpg 1x, <?php echo $wp_url; ?>/dist/images/opt_boots@2x.jpg 2x">
 </div>
-<div class="plan__list-item-txt">
+<div class="plan__list-item-txt full">
 <h3>ブーツ</h3>
 <p>袴はもちろん、着物に合わせてレトロ風に着こなしても素敵です。草履に比べて歩きやすいので、京都市内をぐるっと散策される方にもおすすめ。!</p>
 <p class="price">+<span>500</span>円</p>
 </div>
-<div class="plan__list-item-arrow"><i class="fas fa-angle-right"></i></div>
 </div>
 </div>
 </div>
