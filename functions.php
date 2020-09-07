@@ -150,3 +150,9 @@ function form_tel($tel)
     return '携帯電話番号';
 }
 add_filter('booking_form_tel', 'form_tel');
+
+function form_option_message($message)
+{
+    return '';
+}
+add_filter('booking_form_option_message', 'form_option_message');
