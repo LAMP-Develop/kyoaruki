@@ -138,7 +138,7 @@ foreach ($plan_options as $key => $opt): ?>
 
 <?php if ($opt === 'お荷物お預かり'): ?>
 <div class="w-100"></div>
-<a class="plan__list-item no-img mr-md-3 mr-0" href="<?php echo $home; ?>/option/">
+<a class="plan__list-item no-img" href="<?php echo $home; ?>/option/">
 <div class="plan__list-item-txt">
 <h3>お荷物お預かり</h3>
 <p class="price"><span>無料</span></p>
@@ -168,7 +168,7 @@ foreach ($plan_options as $key => $opt): ?>
 <?php endif; ?>
 
 <?php if ($opt === 'プロカメラマン撮影'): ?>
-<a class="plan__list-item no-img mr-0" href="<?php echo $home; ?>/option/">
+<a class="plan__list-item no-img" href="<?php echo $home; ?>/option/">
 <div class="plan__list-item-txt">
 <h3>プロカメラマン撮影</h3>
 <p class="price"><span>1,500</span>円</p>
