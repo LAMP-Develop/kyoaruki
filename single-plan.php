@@ -136,8 +136,6 @@ foreach ($plan_options as $key => $opt): ?>
 </div>
 <?php endif; ?>
 
-<div class="w-100"></div>
-
 <?php if ($opt === 'お荷物お預かり'): ?>
 <a class="plan__list-item no-img" href="<?php echo $home; ?>/option/">
 <div class="plan__list-item-txt">
