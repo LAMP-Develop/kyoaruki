@@ -11,8 +11,8 @@ $p = str_replace('-', ' ', $p);
 <img class="bg-icon" src="<?php echo $wp_url; ?>/dist/images/bg_icon.png" alt="kimono" srcset="<?php echo $wp_url; ?>/dist/images/bg_icon.png 1x, <?php echo $wp_url; ?>/dist/images/bg_icon@2x.png 2x">
 <div class="container">
 <h2 class="text-danger text-center">
-<span class="font-serif d-block"><?php echo $p; ?></span>
 <span class="font-serif d-block"><?php the_title(); ?></span>
+<span class="font-serif d-block"></span>
 </h2>
 </div>
 <img class="bg-icon" src="<?php echo $wp_url; ?>/dist/images/bg_icon.png" alt="kimono" srcset="<?php echo $wp_url; ?>/dist/images/bg_icon.png 1x, <?php echo $wp_url; ?>/dist/images/bg_icon@2x.png 2x">

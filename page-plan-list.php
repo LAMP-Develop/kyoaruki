@@ -63,7 +63,7 @@ foreach ($plan_posts as $post):
 </div>
 <div class="plan__list-item-txt">
 <h3><?php the_title(); ?></h3>
-<p><?php the_field('plan_text'); ?></p>
+<p><?php echo mb_strimwidth(get_field('plan_text'), 0, 120, '…'); ?></p>
 <p class="price"><span><?php the_field('plan_price'); ?></span>円</p>
 </div>
 <div class="plan__list-item-arrow"><i class="fas fa-angle-right"></i></div>
