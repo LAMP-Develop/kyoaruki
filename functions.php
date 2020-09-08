@@ -141,7 +141,7 @@ add_filter('booking_form_count_label', 'form_count_label');
 
 function form_option_title($title)
 {
-    return 'プラン・オプション選択';
+    return '【プラン・オプション】';
 }
 add_filter('booking_form_option_title', 'form_option_title');
 
