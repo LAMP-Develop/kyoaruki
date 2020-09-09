@@ -44,6 +44,17 @@ $wp_url = get_template_directory_uri(); ?>
   f.parentNode.insertBefore(j, f);
 })(window, document, 'script', 'dataLayer', 'GTM-W7ZDM9');
 </script>
+
+<!-- yjtag -->
+<script id="tagjs">
+(function() {
+  var tagjs = document.createElement("script");
+  var s = document.getElementsByTagName("script")[0];
+  tagjs.async = true;
+  tagjs.src = "https://s.yjtag.jp/tag.js#site=acq1zsj";
+  s.parentNode.insertBefore(tagjs, s);
+}());
+</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -52,6 +63,12 @@ $wp_url = get_template_directory_uri(); ?>
 <noscript>
 <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7ZDM9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
+
+<!-- yjtag -->
+<noscript>
+<iframe src="https://b.yjtag.jp/iframe?c=acq1zsj" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+
 <a class="sr-only sr-only-focusable" href="#main-content">Skip to main content</a>
 
 <header class="header">
