@@ -80,6 +80,26 @@ $p = str_replace('-', ' ', $p);
 </div>
 <div class="plan__list-item">
 <div class="plan__list-item-thumbnail">
+<img src="<?php echo $wp_url; ?>/dist/images/opt_garaeri.jpg" alt="柄えり" srcset="<?php echo $wp_url; ?>/dist/images/opt_garaeri.jpg 1x, <?php echo $wp_url; ?>/dist/images/opt_garaeri@2x.jpg 2x">
+</div>
+<div class="plan__list-item-txt full">
+<h3>柄えり</h3>
+<p>首元から見える柄えりでオシャレさをプラス。着物の柄と合わせてレンタルすることで、顔映りがガラッと変わります。!</p>
+<p class="price">+<span>500</span>円</p>
+</div>
+</div>
+<div class="plan__list-item">
+<div class="plan__list-item-thumbnail">
+<img src="<?php echo $wp_url; ?>/dist/images/opt_taiko.jpg" alt="太鼓帯" srcset="<?php echo $wp_url; ?>/dist/images/opt_taiko.jpg 1x, <?php echo $wp_url; ?>/dist/images/opt_taiko@2x.jpg 2x">
+</div>
+<div class="plan__list-item-txt full">
+<h3>太鼓帯</h3>
+<p>本格的な着物姿を楽しむなら、断然太鼓帯がおすすめ！伝統的な和柄から、個性的な柄まで様々なデザインの太鼓帯を取り揃えております。!</p>
+<p class="price">+<span>1,500</span>円</p>
+</div>
+</div>
+<div class="plan__list-item">
+<div class="plan__list-item-thumbnail">
 <img src="<?php echo $wp_url; ?>/dist/images/opt_boots.jpg" alt="ブーツ" srcset="<?php echo $wp_url; ?>/dist/images/opt_boots.jpg 1x, <?php echo $wp_url; ?>/dist/images/opt_boots@2x.jpg 2x">
 </div>
 <div class="plan__list-item-txt full">
