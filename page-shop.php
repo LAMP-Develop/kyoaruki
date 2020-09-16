@@ -34,10 +34,37 @@ get_header(); the_post(); ?>
 <p>京都中心部（四条駅/烏丸駅から徒歩2分・京都駅より６分）に本店があり、『錦市場』をぶらぶら歩き、『祇園』『八坂神社』『清水寺』『八坂庚申堂』『高台寺』等の『祇園東山エリア』『伏見稲荷』や『嵐山』…どこへでもアクセス抜群！ホテル・旅館の多いエリアなのでスケジュールが組みやすいですよ♪</p>
 </div>
 <div class="shop__inner-seeing">
-<p class="text-center">
-<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/shop_pict_1.png" alt="京都四条本店" srcset="<?php echo $wp_url; ?>/dist/images/shop_pict_1.png 1x, <?php echo $wp_url; ?>/dist/images/shop_pict_1@2x.png 2x">
-</p>
-<div class="shop__inner-seeing-reco bg-light">
+<div id="carouselshijo" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#carouselshijo" data-slide-to="0" class="active"></li>
+<li data-target="#carouselshijo" data-slide-to="1"></li>
+<li data-target="#carouselshijo" data-slide-to="2"></li>
+<li data-target="#carouselshijo" data-slide-to="3"></li>
+</ol>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/shijo-1.jpg" alt="四条本店" srcset="<?php echo $wp_url; ?>/dist/images/shijo-1.jpg 1x, <?php echo $wp_url; ?>/dist/images/shijo-1@2x.jpg 2x">
+</div>
+<div class="carousel-item">
+<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/shijo-2.jpg" alt="四条本店" srcset="<?php echo $wp_url; ?>/dist/images/shijo-2.jpg 1x, <?php echo $wp_url; ?>/dist/images/shijo-2@2x.jpg 2x">
+</div>
+<div class="carousel-item">
+<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/shijo-3.jpg" alt="四条本店" srcset="<?php echo $wp_url; ?>/dist/images/shijo-3.jpg 1x, <?php echo $wp_url; ?>/dist/images/shijo-3@2x.jpg 2x">
+</div>
+<div class="carousel-item">
+<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/shijo-4.jpg" alt="四条本店" srcset="<?php echo $wp_url; ?>/dist/images/shijo-4.jpg 1x, <?php echo $wp_url; ?>/dist/images/shijo-4@2x.jpg 2x">
+</div>
+</div>
+<a class="carousel-control-prev" href="#carouselshijo" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselshijo" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+<div class="shop__inner-seeing-reco bg-light mt-5">
 <h4 class="font-serif">おすすめ観光地</h4>
 <div class="shop__inner-seeing-reco__list">
 <div class="shop__inner-seeing-reco__list-item">
@@ -95,10 +122,37 @@ get_header(); the_post(); ?>
 <p>清水寺・八坂神社・八坂庚申堂・祇園・高台寺などの祇園・東山エリアの観光地の中心地です。<br>高台寺や八坂庚申堂までは徒歩3分♪</p>
 </div>
 <div class="shop__inner-seeing">
-<p class="text-center">
-<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/shop_pict_2.png" alt="京都祇園店" srcset="<?php echo $wp_url; ?>/dist/images/shop_pict_2.png 1x, <?php echo $wp_url; ?>/dist/images/shop_pict_2@2x.png 2x">
-</p>
-<div class="shop__inner-seeing-reco bg-light">
+<div id="carouselgion" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#carouselgion" data-slide-to="0" class="active"></li>
+<li data-target="#carouselgion" data-slide-to="1"></li>
+<li data-target="#carouselgion" data-slide-to="2"></li>
+<li data-target="#carouselgion" data-slide-to="3"></li>
+</ol>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/gion-1.jpg" alt="四条本店" srcset="<?php echo $wp_url; ?>/dist/images/gion-1.jpg 1x, <?php echo $wp_url; ?>/dist/images/gion-1@2x.jpg 2x">
+</div>
+<div class="carousel-item">
+<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/gion-2.jpg" alt="四条本店" srcset="<?php echo $wp_url; ?>/dist/images/gion-2.jpg 1x, <?php echo $wp_url; ?>/dist/images/gion-2@2x.jpg 2x">
+</div>
+<div class="carousel-item">
+<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/gion-3.jpg" alt="四条本店" srcset="<?php echo $wp_url; ?>/dist/images/gion-3.jpg 1x, <?php echo $wp_url; ?>/dist/images/gion-3@2x.jpg 2x">
+</div>
+<div class="carousel-item">
+<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/gion-4.jpg" alt="四条本店" srcset="<?php echo $wp_url; ?>/dist/images/gion-4.jpg 1x, <?php echo $wp_url; ?>/dist/images/gion-4@2x.jpg 2x">
+</div>
+</div>
+<a class="carousel-control-prev" href="#carouselshijo" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselshijo" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+<div class="shop__inner-seeing-reco bg-light mt-5">
 <h4 class="font-serif">おすすめ観光地</h4>
 <div class="shop__inner-seeing-reco__list">
 <div class="shop__inner-seeing-reco__list-item">
