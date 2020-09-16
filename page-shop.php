@@ -143,11 +143,11 @@ get_header(); the_post(); ?>
 <img class="w-100" src="<?php echo $wp_url; ?>/dist/images/gion-4.jpg" alt="四条本店" srcset="<?php echo $wp_url; ?>/dist/images/gion-4.jpg 1x, <?php echo $wp_url; ?>/dist/images/gion-4@2x.jpg 2x">
 </div>
 </div>
-<a class="carousel-control-prev" href="#carouselshijo" role="button" data-slide="prev">
+<a class="carousel-control-prev" href="#carouselgion" role="button" data-slide="prev">
 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 <span class="sr-only">Previous</span>
 </a>
-<a class="carousel-control-next" href="#carouselshijo" role="button" data-slide="next">
+<a class="carousel-control-next" href="#carouselgion" role="button" data-slide="next">
 <span class="carousel-control-next-icon" aria-hidden="true"></span>
 <span class="sr-only">Next</span>
 </a>
