@@ -1,0 +1,62 @@
+main {
+  overflow: hidden;
+  display: block;
+  box-sizing: border-box;
+  width: calc(100% - 260px);
+  margin-left: auto;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    padding-top: 56px;
+  }
+  .container {
+    max-width: 1024px;
+    padding: 0 1rem;
+  }
+}
+
+.infinity-slide {
+  display: flex;
+  width: 100%;
+  height: 157px;
+  &-inner {
+    -moz-animation: infinityloop 40s linear infinite;
+    -webkit-animation: infinityloop 40s linear infinite;
+    animation: infinityloop 40s linear infinite;
+    display: flex;
+    width: calc(227px * 8);
+    &-slide {
+      width: 227px;
+      height: 157px;
+      &:nth-child(2n) {
+        margin-top: -1rem;
+      }
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+}
+
+/* 無限ループアニメーション */
+@-webkit-keyframes infinityloop {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-227px * 4));
+    transform: translateX(calc(-227px * 4));
+  }
+}
+
+@keyframes infinityloop {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-227px * 4));
+    transform: translateX(calc(-227px * 4));
+  }
+}

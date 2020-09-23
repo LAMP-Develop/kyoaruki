@@ -1,0 +1,116 @@
+.options {
+  &-wrap {
+    margin-bottom: 4rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  .plan__list-item-txt h3 {
+    span {
+      display: block;
+      line-height: 1;
+      font-size: 11px;
+      margin-bottom: 5px;
+      i {
+        line-height: 1;
+        display: inline-block;
+        vertical-align: middle;
+        border: solid 1px $warning;
+        font-style: normal;
+        padding: 3px;
+      }
+    }
+  }
+  .orange {
+    .plan__list-item-arrow,
+    .ttl-opt > span:first-child {
+      background-color: $warning;
+    }
+    .plan__list-item-txt p.price span,
+    .plan__list-item-txt h3 {
+      color: $warning;
+    }
+  }
+  .blue {
+    .plan__list-item-arrow,
+    .ttl-opt > span:first-child {
+      background-color: $info;
+    }
+    .plan__list-item-txt p.price span,
+    .plan__list-item-txt h3 {
+      color: $info;
+    }
+  }
+  .pink {
+    .plan__list-item-arrow,
+    .ttl-opt > span:first-child {
+      background-color: #F84087;
+    }
+    .plan__list-item-txt p.price span,
+    .plan__list-item-txt h3 {
+      color: #F84087;
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    &-item {
+      width: 49%;
+      padding: 1rem;
+      border-top: 5px solid $info;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+      h4 {
+        font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+        font-size: 1.125rem;
+        margin: 0 0 0.5em;
+        color: $info;
+        span {
+          display: block;
+          line-height: 1;
+          font-size: 11px;
+          margin-top: 5px;
+          i {
+            line-height: 1;
+            display: inline-block;
+            vertical-align: middle;
+            border: solid 1px $info;
+            font-style: normal;
+            padding: 3px;
+          }
+        }
+      }
+      p {
+        font-size: 11px;
+        margin: 0;
+        line-height: normal;
+        &.price {
+          text-align: right;
+          line-height: 1;
+          margin-top: 0.5rem;
+          span {
+            font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+            font-size: 22px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.warning {
+  &-ttl {
+    font-size: 1.125rem;
+    color: $danger;
+  }
+  &__box {
+    padding: 1rem;
+    background-color: $light;
+  }
+}

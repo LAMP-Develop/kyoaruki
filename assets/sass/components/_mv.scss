@@ -1,0 +1,81 @@
+.mv {
+  z-index: 1;
+  position: relative;
+  box-sizing: border-box;
+  padding: 1rem 1rem 1rem 5rem;
+  @include media-breakpoint-down(md) {
+    padding: 0 0 0 3rem;
+  }
+  &-verticaltxt {
+    z-index: 1;
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    @include media-breakpoint-down(md) {
+      top: 3rem;
+      left: 1rem;
+    }
+  }
+  &-jaran {
+    z-index: 1;
+    position: absolute;
+    top: 3rem;
+    left: 10rem;
+    @include media-breakpoint-down(md) {
+      max-width: 30vw;
+      top: 1.5rem;
+      left: 4rem;
+    }
+    img {
+      display: block;
+      margin: 0 auto 1rem;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  &-txtkimono {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    @include media-breakpoint-down(md) {
+      left: 0;
+    }
+  }
+  &__sub {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    padding: 5rem 0;
+    @include media-breakpoint-down(md) {
+      padding: 2rem 0;
+    }
+    & > .bg-icon {
+      transform: rotate(90deg);
+      &:first-of-type {
+        top: -1rem;
+        right: -1rem;
+      }
+      &:last-of-type {
+        bottom: -1rem;
+        left: -1rem;
+        transform: rotate(-90deg);
+      }
+    }
+    h2 {
+      text-align: center;
+      font-size: 13px;
+      margin: 0;
+      & > span {
+        line-height: 1.5;
+        &:first-child {
+          font-weight: bold;
+          font-size: 1.8rem;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.monthly-calendar {
+  .calendar-title {
+    display: none;
+  }
+  table {
+    width: 100% !important;
+    border-collapse: separate;
+    border-spacing: 0.25rem;
+  }
+}
+
+.monthly-prev-next {
+  width: 100% !important;
+}
+
+.mtssb-timetable-link {
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+}
+
+.mtssb-daily-action {
+  text-align: center;
+  button {
+    border: 0;
+    font-size: $font-size-sm;
+    background-color: #eeeeee;
+    padding: 0.5rem 2rem;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+#action-button {
+  text-align: center;
+  button {
+    border: 0;
+    font-size: $font-size-base;
+    background-color: $danger;
+    color: $white;
+    padding: 0.5rem 2rem;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.content-form {
+  input,
+  select,
+  textarea {
+    border: 1px solid #eeeeee;
+    padding: 0.5em;
+  }
+  table {
+    th,
+    td {
+      font-size: $font-size-sm !important;
+    }
+  }
+}
+
+.content-form .booking-seimei {
+  width: auto !important;
+}
+
+.content-form th {
+  width: auto !important;
+  white-space: nowrap;
+}
+
+.reserve-btns {
+  a {
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+}
+
+.content-form label.field-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  margin: 0 0 1rem;
+  @include media-breakpoint-down(md) {
+    display: block;
+    width: 100%;
+  }
+}

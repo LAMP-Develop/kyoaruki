@@ -1,0 +1,143 @@
+.shop {
+  &__inner {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 2rem;
+    max-width: 768px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    & > h3 {
+      z-index: 1;
+      position: relative;
+      background-color: $danger;
+      font-size: 1.5rem;
+      color: $white;
+      letter-spacing: 0.2em;
+      text-align: center;
+      box-sizing: border-box;
+      margin: 0 0 1.5em;
+      padding: 0.5em;
+      &::after {
+        z-index: -1;
+        content: "";
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        background-color: $danger;
+        position: absolute;
+        left: 50%;
+        bottom: -1rem;
+        transform: rotate(45deg) translateX(-50%);
+      }
+    }
+    &-address {
+      margin: 1rem 0;
+      padding-bottom: 1rem;
+      border-bottom: dotted 1px $light;
+    }
+    &-point {
+      padding: 1.5rem 0;
+      margin-bottom: 1.5rem;
+      border-bottom: solid 1px $danger;
+      & > h4 {
+        z-index: 1;
+        position: relative;
+        text-align: center;
+        font-size: 1rem;
+        margin: 0 0 1.5rem;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        & > span {
+          background-color: $white;
+          display: inline-block;
+          vertical-align: middle;
+          box-sizing: border-box;
+          padding: 0 2em;
+          letter-spacing: 0.2em;
+        }
+        &::after {
+          z-index: -1;
+          content: "";
+          display: block;
+          width: 100%;
+          height: 1px;
+          background-color: $danger;
+          position: absolute;
+          top: 50%;
+          left: 0;
+        }
+      }
+      & > h5 {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        margin-bottom: 1em;
+        padding: 0 1rem;
+        box-sizing: border-box;
+      }
+      p {
+        margin-bottom: 0;
+        padding: 0 1rem;
+        box-sizing: border-box;
+      }
+    }
+    &-seeing {
+      &-reco {
+        box-sizing: border-box;
+        padding: 1rem;
+        & > h4 {
+          text-align: center;
+          font-size: 1.125rem;
+          margin: 0 0 1rem;
+        }
+        &__list {
+          display: flex;
+          justify-content: start;
+          align-items: stretch;
+          flex-wrap: wrap;
+          &-item {
+            width: 49%;
+            margin-bottom: 2%;
+            background-color: $white;
+            box-sizing: border-box;
+            padding: 0.75rem;
+            &:nth-child(2n) {
+              margin-left: 2%;
+            }
+            h5 {
+              box-sizing: border-box;
+              font-size: $font-size-sm;
+              padding-left: 0.5em;
+              border-left: solid 3px $danger;
+              margin-bottom: 0;
+              @include media-breakpoint-down(md) {
+                font-size: 13px;
+              }
+              & + p {
+                position: relative;
+                box-sizing: border-box;
+                padding-left: 1.5em;
+                font-size: $font-size-sm;
+                margin: 0;
+                &::before {
+                  content: "";
+                  display: block;
+                  width: 1em;
+                  height: 1px;
+                  background-color: $body-color;
+                  position: absolute;
+                  top: 1.25em;
+                  left: 0;
+                }
+                span {
+                  font-size: 130%;
+                  margin: 0 3px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

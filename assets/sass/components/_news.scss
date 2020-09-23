@@ -1,0 +1,75 @@
+.news {
+  &__list {
+    display: block;
+    a {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-wrap: nowrap;
+      box-sizing: border-box;
+      color: $body-color;
+      padding: 0.5rem 0;
+      font-size: $font-size-sm;
+      @include media-breakpoint-down(md) {
+        flex-wrap: wrap;
+        font-size: 12px;
+      }
+      span {
+        display: block;
+        box-sizing: border-box;
+        line-height: normal;
+        &:first-child {
+          color: $danger;
+          margin-right: 1em;
+          padding-right: 1em;
+          border-right: solid 1px $body-color;
+          @include media-breakpoint-down(md) {
+            border-right: 0;
+            padding-right: 0;
+          }
+        }
+        &:nth-child(2) {
+          background-color: $white;
+          padding: 0.25rem 0.5rem;
+          margin-right: 1rem;
+          @include media-breakpoint-down(md) {
+            padding: 0.1rem 0.25rem;
+          }
+        }
+        &:nth-child(3) {
+          @include media-breakpoint-down(md) {
+            width: 100%;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+    &-archives {
+      a {
+        border-bottom: 1px solid #eeeeee;
+      }
+    }
+  }
+}
+
+.wp-pagenavi {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 2rem;
+  a,
+  span {
+    margin: 0 0.25rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1;
+    color: $danger;
+    border: 1px solid $danger;
+    border-radius: 0.25rem;
+    & + .current,
+    &:hover {
+      background-color: $danger;
+      color: $white;
+    }
+  }
+}

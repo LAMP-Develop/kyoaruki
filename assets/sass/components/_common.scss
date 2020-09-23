@@ -1,0 +1,249 @@
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: $font-size-sm;
+}
+
+p {
+  line-height: 1.8;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: baseline;
+}
+
+a {
+  transition: all 0.3s;
+  &:not(.btn) {
+    &:hover {
+      opacity: 0.75;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+select {
+  &.form-control {
+    border: 0;
+    background-color: $secondary;
+  }
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.font-serif {
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+
+.ttl {
+  &-2 {
+    font-size: 13px;
+    margin: 0 auto 3rem;
+    span {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-family: "Playfair Display", serif;
+      color: $danger;
+      font-size: 1.6rem;
+      font-weight: bold;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+  }
+  &-3 {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0 0 2em;
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      padding: 0 1rem;
+      background-color: $white;
+    }
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 0;
+      border-bottom: dotted 1px #cccccc;
+    }
+  }
+  &-4 {
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding-left: 1em;
+    border-left: solid 0.25em $danger;
+  }
+  &-opt {
+    text-align: center;
+    margin-bottom: 1em;
+    & > span {
+      display: block;
+      &:first-child {
+        color: $white;
+        text-transform: uppercase;
+        background-color: $danger;
+        font-size: 1.125rem;
+        letter-spacing: 0.2em;
+        box-sizing: border-box;
+        padding: 0.5rem 1rem;
+      }
+      &:last-child {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.bg {
+  &-plan {
+    z-index: 1;
+    position: relative;
+    background: url("../images/bg_plan.png") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.btn {
+  position: relative;
+  border: 0;
+  border-radius: 0;
+  padding: 1em 3em;
+  font-size: $font-size-base;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  letter-spacing: 0.1em;
+  @include media-breakpoint-down(md) {
+    padding: 0.5em 3.5em;
+  }
+  &:not(.btn-block) {
+    @include media-breakpoint-up(md) {
+      min-width: 340px;
+    }
+  }
+  &::before {
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+  }
+  &::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    background-color: #e8e8e8;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+  }
+  &:hover {
+    &::before {
+      right: 0.5em;
+    }
+    &::after {
+      top: 0;
+      right: 0;
+    }
+  }
+  &-outline {
+    &-danger {
+      border: solid 1px $danger;
+      color: $danger;
+      background-color: $white;
+      &:hover {
+        background-color: $danger;
+        color: $white;
+      }
+    }
+    &-light {
+      border: solid 1px $body-color;
+      color: $body-color;
+      background-color: $white;
+      &:hover {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+.carousel {
+  margin-bottom: 2rem !important;
+  &-indicators {
+    top: auto;
+    bottom: -2rem;
+    margin-bottom: 0;
+    li {
+      background-color: #cccccc;
+      &.active {
+        background-color: $danger;
+      }
+    }
+  }
+  &-control {
+    &-prev {
+      width: 10%;
+      opacity: 1;
+      &-icon {
+        text-align: center;
+        background: none;
+        background-color: $white;
+        border-radius: 50%;
+        box-shadow: 0 0 3px rgba($body-color, 0.3);
+        &::before {
+          content: "\f104";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: $danger;
+        }
+      }
+    }
+    &-next {
+      width: 10%;
+      opacity: 1;
+      &-icon {
+        text-align: center;
+        background: none;
+        background-color: $white;
+        border-radius: 50%;
+        box-shadow: 0 0 3px rgba($body-color, 0.3);
+        &::before {
+          content: "\f105";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: $danger;
+        }
+      }
+    }
+  }
+}
+
+.border {
+  border-color: $body-color !important;
+}
+
+.text-base {
+  font-size: $font-size-base !important;
+}
+
+.gmap {
+  max-width: 768px;
+  margin: 0 auto;
+}

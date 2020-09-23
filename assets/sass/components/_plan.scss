@@ -1,0 +1,351 @@
+.plan {
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    &-wrap {
+      margin-bottom: 2rem;
+      &:last-of-type {
+        margin-bottom: 0 !important;
+      }
+      &-ttl {
+        box-sizing: border-box;
+        font-size: 1.125rem;
+        padding-left: 1rem;
+        margin: 0 0 1rem;
+        border-left: solid 5px $danger;
+        &.yukata {
+          border-color: $warning;
+        }
+        &.furisode {
+          border-color: $success;
+        }
+        &.otherkimono {
+          border-color: $info;
+        }
+        &.value-set {
+          border-color: #f84087;
+        }
+        &.location-photo {
+          border-color: #502274;
+        }
+      }
+    }
+    &-item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+      flex-wrap: nowrap;
+      box-sizing: border-box;
+      width: 32%;
+      min-height: 220px;
+      margin-right: 2%;
+      margin-bottom: 2%;
+      color: $body-color;
+      background-color: $white;
+      box-shadow: 0 0 5px rgba($body-color, 0.1);
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        margin: 0 0 1rem !important;
+      }
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &:last-child {
+        @include media-breakpoint-down(md) {
+          margin-bottom: 0 !important;
+        }
+      }
+      &-thumbnail {
+        overflow: hidden;
+        position: relative;
+        width: 120px;
+        font-size: 0;
+        img {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          vertical-align: bottom;
+        }
+      }
+      &-txt {
+        box-sizing: border-box;
+        width: calc(100% - 120px - 24px);
+        padding: 1rem;
+        &.full {
+          position: relative;
+          width: calc(100% - 120px);
+          & > img {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+          }
+        }
+        h3 {
+          font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+          font-size: 1.125rem;
+          margin: 0 0 0.5em;
+          color: $danger;
+        }
+        p {
+          font-size: 11px;
+          margin: 0;
+          line-height: normal;
+          &.price {
+            line-height: 1;
+            margin-top: 0.5rem;
+            &::before {
+              content: "";
+              display: inline-block;
+              vertical-align: text-top;
+              width: 1.5rem;
+              height: 1px;
+              background-color: $body-color;
+              margin-right: 5px;
+            }
+            span {
+              font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+              font-size: 22px;
+              color: $danger;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+      &-arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        background-color: $danger;
+        color: $white;
+      }
+      &.yukata {
+        .plan__list-item-txt p.price span,
+        .plan__list-item-txt h3 {
+          color: $warning;
+        }
+        .plan__list-item-arrow {
+          background-color: $warning;
+        }
+      }
+      &.furisode {
+        .plan__list-item-txt p.price span,
+        .plan__list-item-txt h3 {
+          color: $success;
+        }
+        .plan__list-item-arrow {
+          background-color: $success;
+        }
+      }
+      &.otherkimono {
+        .plan__list-item-txt p.price span,
+        .plan__list-item-txt h3 {
+          color: $info;
+        }
+        .plan__list-item-arrow {
+          background-color: $info;
+        }
+      }
+      &.value-set {
+        .plan__list-item-txt p.price span,
+        .plan__list-item-txt h3 {
+          color: #f84087;
+        }
+        .plan__list-item-arrow {
+          background-color: #f84087;
+        }
+      }
+      &.location-photo {
+        .plan__list-item-txt p.price span,
+        .plan__list-item-txt h3 {
+          color: #502274;
+        }
+        .plan__list-item-arrow {
+          background-color: #502274;
+        }
+      }
+      &.no-img {
+        min-height: 1px;
+        .plan__list-item-txt {
+          width: calc(100% - 24px);
+          display: flex;
+          align-items: center;
+          padding: 1rem;
+          h3 {
+            font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+            color: $body-color;
+            font-size: $font-size-sm;
+            margin: 0 1rem 0 0;
+          }
+          p.price {
+            line-height: 1;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  /* 詳細ページ */
+  &-single {
+    &__slide {
+      .slider-nav {
+        max-width: 800px;
+        margin: 0 auto;
+        .thumbnailnav {
+          position: relative;
+          overflow: hidden;
+          height: 200px;
+          @include media-breakpoint-down(md) {
+            height: 125px;
+          }
+          img {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 97%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    &__info {
+      &-price {
+        font-size: 1rem;
+        span {
+          font-size: 2rem;
+          color: $danger;
+          margin: 0 5px;
+        }
+      }
+    }
+    &__content {
+      h3 {
+        font-size: 1.125rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: solid 1px $body-color;
+      }
+      &__list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-wrap: wrap;
+        &-item {
+          width: 32%;
+          margin-right: 2%;
+          margin-bottom: 1rem;
+          text-align: center;
+          box-sizing: border-box;
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    &__option {
+      h2 {
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  &-single {
+    &__shop {
+      .badge {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.sub-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  a {
+    position: relative;
+    display: block;
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    padding: 1em;
+    border-top: solid 1px $danger;
+    border-left: solid 1px $danger;
+    border-bottom: solid 1px $danger;
+    color: $danger;
+    text-align: center;
+    @include media-breakpoint-down(md) {
+      width: 50%;
+      font-size: 12px;
+      border-bottom: 0;
+    }
+    &:nth-child(2n) {
+      @include media-breakpoint-down(md) {
+        border-right: solid 1px $danger;
+      }
+    }
+    &:nth-child(6n) {
+      border-right: solid 1px $danger;
+    }
+    &:nth-child(3n) {
+      border-right: solid 1px $danger;
+      @include media-breakpoint-down(md) {
+        border-right: 0;
+      }
+    }
+    &:last-child {
+      border-right: solid 1px $danger;
+    }
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      border-top: 0;
+      @include media-breakpoint-down(md) {
+        border-top: solid 1px $danger;
+      }
+    }
+    &:nth-child(5),
+    &:nth-child(6) {
+      @include media-breakpoint-down(md) {
+        border-bottom: solid 1px $danger;
+      }
+    }
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 1em;
+      transform: translateY(-50%);
+      content: "\f0d7";
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+.slick-slider {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .carousel-control-prev-icon {
+    left: 3vw;
+  }
+  .carousel-control-next-icon {
+    right: 3vw;
+  }
+}
