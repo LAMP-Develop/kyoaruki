@@ -31,14 +31,9 @@ $p = str_replace('-', ' ', $p);
 <img class="w-100" src="<?php echo $wp_url; ?>/dist/images/op01_about_img.png" alt="あなただけの着物レンタル" srcset="<?php echo $wp_url; ?>/dist/images/op01_about_img.png 1x, <?php echo $wp_url; ?>/dist/images/op01_about_img@2x.png 2x">
 </div>
 <div class="col-md-9 px-md-3 px-0">
-<p class="mb-0">京あるきではおしゃれで可愛い着物を多数ご用意しております。
-<br>あなたに似合う一着がきっと見つかるはず。
-<br>どこがいいか迷ったら、京あるきにお任せください。
-<br>
-<br>可愛い系・レトロ・アンティーク・クール系などお気に入りの1枚を見つけて下さい。
-<br>
-<br>安心、安全の着物レンタル!
-<br>着物や肌着類は、毎回必ずクリーニングを徹底しています。</p>
+<p class="mb-0">特別な一日だからこそ、細部までこだわったお気に入りの和装スタイルで京都の街を歩きませんか?
+<br>※レンタル着物プラン内にもセットで小物が付属しております。
+<br>※以下の小物類はプラン料金+別途にてご利用いただけるオプションとなります。</p>
 </div>
 </div>
 <div class="plan-single__option__list mt-5">
