@@ -263,7 +263,7 @@ $p = str_replace('-', ' ', $p);
 <div class="container text-center">
 <h2 class="ttl-2 text-center mb-4"><span>Booking</span>団体プランのご予約</h2>
 <p class="group__booking-tel font-serif">
-<a href="tel:075-241-5776">TEL<span class="text-danger">075-241-5776</span></a>
+<a href="tel:075-241-5589">TEL<span class="text-danger">075-241-5589</span></a>
 </p>
 <p>
 <a class="btn btn-danger" href="<?php echo $home; ?>/group-form/">ご予約はこちらから</a>
