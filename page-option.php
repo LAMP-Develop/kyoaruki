@@ -60,7 +60,7 @@ $p = str_replace('-', ' ', $p);
 </div>
 <div class="plan__list-item">
 <div class="plan__list-item-thumbnail">
-<img src="<?php echo $wp_url; ?>/dist/images/op_kazari.png" alt="髪飾り付け放題" srcset="<?php echo $wp_url; ?>/dist/images/op_kazari.png 1x, <?php echo $wp_url; ?>/dist/images/op_kazari@2x.png 2x">
+<img src="<?php echo $wp_url; ?>/dist/images/op_kazari.jpg" alt="髪飾り付け放題" srcset="<?php echo $wp_url; ?>/dist/images/op_kazari.jpg 1x, <?php echo $wp_url; ?>/dist/images/op_kazari@2x.jpg 2x">
 </div>
 <div class="plan__list-item-txt full">
 <h3>髪飾り付け放題</h3>
@@ -70,7 +70,7 @@ $p = str_replace('-', ' ', $p);
 </div>
 <div class="plan__list-item">
 <div class="plan__list-item-thumbnail">
-<img src="<?php echo $wp_url; ?>/dist/images/op_obi.png" alt="帯飾り" srcset="<?php echo $wp_url; ?>/dist/images/op_obi.png 1x, <?php echo $wp_url; ?>/dist/images/op_obi@2x.png 2x">
+<img src="<?php echo $wp_url; ?>/dist/images/op_obi.jpg" alt="帯飾り" srcset="<?php echo $wp_url; ?>/dist/images/op_obi.jpg 1x, <?php echo $wp_url; ?>/dist/images/op_obi@2x.jpg 2x">
 </div>
 <div class="plan__list-item-txt full">
 <h3>帯飾り</h3>
